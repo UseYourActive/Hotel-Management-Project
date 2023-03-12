@@ -56,6 +56,17 @@ public class Hotel
         return String.valueOf(availableRooms);
     }
 
+    public String showAllRooms()
+    {
+        StringBuilder allRooms = new StringBuilder();
+
+        for (Room room : hotelRooms) {
+            allRooms.append(room.toString()).append("\n");
+        }
+
+        return String.valueOf(allRooms);
+    }
+
     public void checkout(Room room)
     {
 
