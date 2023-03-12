@@ -20,6 +20,11 @@ public class Main
         //System.out.println(hotel.findAvailableRoom());
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        try {
+            factory.newDocumentBuilder();
+        } catch (ParserConfigurationException e) {
+            throw new RuntimeException(e);
+        }
 
         try
         {
