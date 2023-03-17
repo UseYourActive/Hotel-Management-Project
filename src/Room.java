@@ -1,3 +1,5 @@
+import java.util.Set;
+
 public class Room
 {
     /* Members of the class. */
@@ -6,6 +8,7 @@ public class Room
     private int numberOfGuests; // Не е задължителен параметър -> трябва функция
     private String note;
     private boolean isAvailable;
+    private Set<Guest> guestList;
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
