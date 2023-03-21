@@ -1,16 +1,18 @@
+package errorlogger;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.nio.file.Paths;
 
-public class ErrorLogWriter implements WriteError
+public class ErrorLogWriter implements ErrorWritable
 {
     /* Members of the class. */
     private final static String ERROR_LOG_PATH = String.valueOf(Paths.get("ErrorLog.txt"));
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
-    ErrorLogWriter(){}
+    public ErrorLogWriter(){}
     /*----------------------------------------------------------------------*/
 
     /* Methods of the class. */
@@ -29,5 +31,11 @@ public class ErrorLogWriter implements WriteError
             throw new RuntimeException("Could not write the exception to the file.", blowUp);
         }
     }
+    /*----------------------------------------------------------------------*/
+
+    /* Overrides. */
+    /*----------------------------------------------------------------------*/
+
+    /* Accessors and Mutators of the class. */
     /*----------------------------------------------------------------------*/
 }
