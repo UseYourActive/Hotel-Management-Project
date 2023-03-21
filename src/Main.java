@@ -19,25 +19,25 @@ public class Main
         //Hotel hotel = Hotel.getInstance();
         //System.out.println(hotel.findAvailableRoom());
 
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-
-        try
-        {
-            DocumentBuilder documentBuilder = factory.newDocumentBuilder();
-            Document doc = documentBuilder.parse("neshto.xml");
-        }
-        catch (ParserConfigurationException e)
-        {
-            throw new RuntimeException(e);
-        }
-        catch (IOException e)
-        {
-            throw new RuntimeException(e);
-        }
-        catch (SAXException e)
-        {
-            throw new RuntimeException(e);
-        }
+//        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+//
+//        try
+//        {
+//            DocumentBuilder documentBuilder = factory.newDocumentBuilder();
+//            Document doc = documentBuilder.parse("neshto.xml");
+//        }
+//        catch (ParserConfigurationException e)
+//        {
+//            throw new RuntimeException(e);
+//        }
+//        catch (IOException e)
+//        {
+//            throw new RuntimeException(e);
+//        }
+//        catch (SAXException e)
+//        {
+//            throw new RuntimeException(e);
+//        }
 
     }
 }

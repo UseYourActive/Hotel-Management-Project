@@ -1,12 +1,12 @@
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Hotel
 {
     /* Members of the class. */
-    private static List<Room> hotelRooms;
+    private static Set<Room> hotelRooms;
     private static Hotel instance;
     private String hotelName;
     /*----------------------------------------------------------------------*/
@@ -20,7 +20,7 @@ public class Hotel
     {
         if (instance == null)
         {
-            hotelRooms = new ArrayList<>();
+            hotelRooms = new HashSet<>();
             instance = new Hotel();
             Hotel.initialize();
             return instance;
@@ -74,12 +74,13 @@ public class Hotel
 
     public static void initialize()
     {
+        WriteError errorlog = new ErrorLogWriter(); // Лоша имплементация и създаване на зависимост
         int numberOfHotelRooms = 20;
         int ROOM_INCREMENT = 1;
 
         for(int index = 1; index < numberOfHotelRooms + ROOM_INCREMENT; index++)
         {
-            hotelRooms.add(new Room(index, RandomNumberGenerator.generateNumberOfBeds()));
+            hotelRooms.add(new Room(index, RandomNumberGenerator.generateNumberOfBeds(), errorlog));
         }
     }
 

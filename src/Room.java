@@ -1,3 +1,4 @@
+import java.util.HashSet;
 import java.util.Set;
 
 public class Room
@@ -8,21 +9,36 @@ public class Room
     private int numberOfGuests; // Не е задължителен параметър -> трябва функция
     private String note;
     private boolean isAvailable;
-    private Set<Guest> guestList;
+    private Set<Guest> guestList = new HashSet<>();
+    private WriteError errorlog;
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
-    public Room(int number, int numberOfBeds)
+    public Room(int number, int numberOfBeds, WriteError errorlog)
     {
         this.number = number;
         this.numberOfBeds = numberOfBeds;
+        this.errorlog = errorlog;
         this.numberOfGuests = 0;
         this.isAvailable = true;
     }
     /*----------------------------------------------------------------------*/
 
     /* Methods of the class. */
-
+    public void addGuest(Guest guest) {
+        if(guestList.contains(guest))
+        {
+            try {
+                throw new GuestAlreadyInRoomException("This guest is already in assigned in the room!");
+            } catch (GuestAlreadyInRoomException e) {
+                errorlog.writeToErrorLog(e);
+            }
+        }
+        else
+        {
+            guestList.add(guest);
+        }
+    }
     /*----------------------------------------------------------------------*/
 
     /* Overrides. */
