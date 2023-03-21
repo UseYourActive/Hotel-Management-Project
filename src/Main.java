@@ -1,3 +1,5 @@
+import errorlogger.ErrorLogWriter;
+import errorlogger.ErrorWritable;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -16,29 +18,18 @@ public class Main
 {
     public static void main(String[] args)
     {
-        //Hotel hotel = Hotel.getInstance();
-        //System.out.println(hotel.findAvailableRoom());
+        // Error logger-a ne suzdava fail - mamka mu
 
-//        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-//
-//        try
-//        {
-//            DocumentBuilder documentBuilder = factory.newDocumentBuilder();
-//            Document doc = documentBuilder.parse("neshto.xml");
-//        }
-//        catch (ParserConfigurationException e)
-//        {
-//            throw new RuntimeException(e);
-//        }
-//        catch (IOException e)
-//        {
-//            throw new RuntimeException(e);
-//        }
-//        catch (SAXException e)
-//        {
-//            throw new RuntimeException(e);
-//        }
-
+        ErrorWritable errorLogWriter = new ErrorLogWriter();
+        RoomFactory factory = new RoomFactory();
+        try
+        {
+            factory.createNotification(RoomTypes.SINGLE_ROOM);
+        }
+        catch (InvalidRoomSelectionException e)
+        {
+            errorLogWriter.writeToErrorLog(e);
+        }
     }
 }
 // ideq: da si napravq klasa guest s factory i da ima razlichen tip guests - pensioneer, child, businessman and more. A room da bude s builder?
@@ -85,3 +76,24 @@ public class Main
 //            System.out.println("There are " + daysToBirthday + " days until your next bday!");
 //        }
 //    }
+
+        //////////////////////////////////////////////
+//        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+//
+//        try
+//        {
+//            DocumentBuilder documentBuilder = factory.newDocumentBuilder();
+//            Document doc = documentBuilder.parse("neshto.xml");
+//        }
+//        catch (ParserConfigurationException e)
+//        {
+//            throw new RuntimeException(e);
+//        }
+//        catch (IOException e)
+//        {
+//            throw new RuntimeException(e);
+//        }
+//        catch (SAXException e)
+//        {
+//            throw new RuntimeException(e);
+//        }
