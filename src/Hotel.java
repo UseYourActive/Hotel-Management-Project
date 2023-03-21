@@ -1,3 +1,6 @@
+import errorlogger.ErrorLogWriter;
+import errorlogger.ErrorWritable;
+
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashSet;
@@ -9,10 +12,15 @@ public class Hotel
     private static Set<Room> hotelRooms;
     private static Hotel instance;
     private String hotelName;
+    private static ErrorWritable errorLogger;
+    private static RoomFactory factory;
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
-    private Hotel(){}
+    private Hotel(ErrorWritable errorLogger)
+    {
+        Hotel.errorLogger = errorLogger;
+    }
     /*----------------------------------------------------------------------*/
 
     /* Methods of the class. */
@@ -21,7 +29,9 @@ public class Hotel
         if (instance == null)
         {
             hotelRooms = new HashSet<>();
-            instance = new Hotel();
+            errorLogger = new ErrorLogWriter();
+            instance = new Hotel(errorLogger);
+            factory = new RoomFactory();
             Hotel.initialize();
             return instance;
         }
@@ -74,13 +84,24 @@ public class Hotel
 
     public static void initialize()
     {
-        WriteError errorlog = new ErrorLogWriter(); // Лоша имплементация и създаване на зависимост
+        try
+        {
+            factory.createNotification(RoomTypes.SINGLE_ROOM);
+            factory.createNotification(RoomTypes.DOUBLE_ROOM);
+            factory.createNotification(RoomTypes.DELUXE_ROOM);
+            factory.createNotification(RoomTypes.PRESIDENT_ROOM);
+        }
+        catch (InvalidRoomSelectionException e)
+        {
+            errorLogger.writeToErrorLog(e);
+        }
+
         int numberOfHotelRooms = 20;
         int ROOM_INCREMENT = 1;
 
         for(int index = 1; index < numberOfHotelRooms + ROOM_INCREMENT; index++)
         {
-            hotelRooms.add(new Room(index, RandomNumberGenerator.generateNumberOfBeds(), errorlog));
+
         }
     }
 
