@@ -29,7 +29,7 @@ public class Room
         if(guestList.contains(guest))
         {
             try {
-                throw new GuestAlreadyInRoomException("This guest is already in assigned in the room!");
+                throw new GuestAlreadyInRoomException("This guest is already in assigned in the room!", new RuntimeException());
             } catch (GuestAlreadyInRoomException e) {
                 errorlog.writeToErrorLog(e);
             }
