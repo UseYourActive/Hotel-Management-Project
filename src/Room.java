@@ -1,38 +1,32 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Room
+public abstract class Room implements RoomCreator
 {
     /* Members of the class. */
-    private final int number;
+    private int number; //////////////////////// da izmislq numbera kakvo da go pravq
     private int numberOfBeds;
     private int numberOfGuests; // Не е задължителен параметър -> трябва функция
     private String note;
     private boolean isAvailable;
-    private Set<Guest> guestList = new HashSet<>();
-    private WriteError errorlog;
+    private List<Guest> guestList = new ArrayList<>();
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
-    public Room(int number, int numberOfBeds, WriteError errorlog)
+    public Room(int numberOfBeds)
     {
-        this.number = number;
         this.numberOfBeds = numberOfBeds;
-        this.errorlog = errorlog;
         this.numberOfGuests = 0;
         this.isAvailable = true;
     }
     /*----------------------------------------------------------------------*/
 
     /* Methods of the class. */
-    public void addGuest(Guest guest) {
+    public void addGuest(Guest guest) throws GuestAlreadyInRoomException
+    {
         if(guestList.contains(guest))
         {
-            try {
                 throw new GuestAlreadyInRoomException("This guest is already in assigned in the room!", new RuntimeException());
-            } catch (GuestAlreadyInRoomException e) {
-                errorlog.writeToErrorLog(e);
-            }
         }
         else
         {
