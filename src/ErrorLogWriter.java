@@ -1,15 +1,16 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.nio.file.Paths;
 
 public class ErrorLogWriter implements WriteError
 {
     /* Members of the class. */
-    private final static String ERROR_LOG_CREATION_FILE = "C:\\LocalErrors.txt";
+    private final static String ERROR_LOG_PATH = String.valueOf(Paths.get("ErrorLog.txt"));
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
-    ErrorLogWriter(){};
+    ErrorLogWriter(){}
     /*----------------------------------------------------------------------*/
 
     /* Methods of the class. */
@@ -18,7 +19,7 @@ public class ErrorLogWriter implements WriteError
     {
         try
         {
-            FileWriter newFile = new FileWriter(ERROR_LOG_CREATION_FILE, true);
+            FileWriter newFile = new FileWriter(ERROR_LOG_PATH, true);
             BufferedWriter buffFile = new BufferedWriter(newFile);
             PrintWriter printFile = new PrintWriter(buffFile, true);
             e.printStackTrace(printFile);
