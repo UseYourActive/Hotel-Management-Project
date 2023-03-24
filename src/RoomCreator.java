@@ -1,4 +1,4 @@
 public interface RoomCreator
 {
-    void createRoom();
+    String createRoom();
 }
