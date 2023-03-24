@@ -1,12 +1,19 @@
-public class RoomFactory
+public class RoomFactory implements FactoryRoomCreational
 {
-    public RoomCreator createNotification(RoomTypes roomType) throws InvalidRoomSelectionException
+    /* Members of the class. */
+    /*----------------------------------------------------------------------*/
+
+    /* Constructor of the class. */
+    /*----------------------------------------------------------------------*/
+
+    /* Methods of the class. */
+    public RoomCreator createRoom(RoomTypes roomType) throws InvalidRoomTypeException
     {
         RoomCreator roomCreator;
 
         if (roomType == null)
         {
-            throw new InvalidRoomSelectionException("Could not find such a room type!");
+            throw new InvalidRoomTypeException("Could not find such a room type!");
         }
 
         switch (roomType)
@@ -24,9 +31,16 @@ public class RoomFactory
                 roomCreator = new PresidentRoom(4); // return i bez break?
                 break;
             default:
-                throw new InvalidRoomSelectionException("Could not find such a room!", new RuntimeException());
+                throw new InvalidRoomTypeException("Could not find such a room type!", new RuntimeException());
         }
 
         return roomCreator;
     }
+    /*----------------------------------------------------------------------*/
+
+    /* Overrides. */
+    /*----------------------------------------------------------------------*/
+
+    /* Accessors and Mutators of the class. */
+    /*----------------------------------------------------------------------*/
 }

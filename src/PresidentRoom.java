@@ -15,9 +15,17 @@ public class PresidentRoom extends Room// za 4ma
 
     /* Overrides. */
     @Override
-    public void createRoom() {
-
+    public String createRoom()
+    {
+        return this.toString();
     }
+
+    @Override
+    public String toString()
+    {
+        return "PresidentRoom{}";
+    }
+
     /*----------------------------------------------------------------------*/
 
     /* Accessors and Mutators of the class. */

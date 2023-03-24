@@ -15,9 +15,17 @@ public class DeluxeRoom extends Room// za 3ma
 
     /* Overrides. */
     @Override
-    public void createRoom() {
-
+    public String createRoom()
+    {
+        return this.toString();
     }
+
+    @Override
+    public String toString()
+    {
+        return "DeluxeRoom{}";
+    }
+
     /*----------------------------------------------------------------------*/
 
     /* Accessors and Mutators of the class. */

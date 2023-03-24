@@ -15,9 +15,17 @@ public class SingleRoom extends Room // za 1
 
     /* Overrides. */
     @Override
-    public void createRoom() {
-
+    public String createRoom()
+    {
+        return this.toString();
     }
+
+    @Override
+    public String toString()
+    {
+        return "SingleRoom{}";
+    }
+
     /*----------------------------------------------------------------------*/
 
     /* Accessors and Mutators of the class. */

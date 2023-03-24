@@ -4,7 +4,7 @@ import java.util.List;
 public abstract class Room implements RoomCreator
 {
     /* Members of the class. */
-    private int number; //////////////////////// da izmislq numbera kakvo da go pravq
+    private int number = 1; //////////////////////// da izmislq numbera kakvo da go pravq
     private int numberOfBeds;
     private int numberOfGuests; // Не е задължителен параметър -> трябва функция
     private String note;
@@ -15,6 +15,7 @@ public abstract class Room implements RoomCreator
     /* Constructor of the class. */
     public Room(int numberOfBeds)
     {
+        number++;
         this.numberOfBeds = numberOfBeds;
         this.numberOfGuests = 0;
         this.isAvailable = true;
@@ -26,7 +27,7 @@ public abstract class Room implements RoomCreator
     {
         if(guestList.contains(guest))
         {
-                throw new GuestAlreadyInRoomException("This guest is already in assigned in the room!", new RuntimeException());
+            throw new GuestAlreadyInRoomException("This guest is already assigned in the room!", new RuntimeException());
         }
         else
         {
@@ -56,7 +57,7 @@ public abstract class Room implements RoomCreator
             stringBuilder.append("Number of guests: ")      .append(this.numberOfGuests)        .append("\n");
         }
 
-        if(this.note != null && !this.note.isEmpty())
+        if((this.note != null) && !(this.note.isEmpty()))
         {
             stringBuilder.append("Note: ")                  .append(this.note)                  .append("\n");
         }
