@@ -10,17 +10,14 @@ public class Hotel
 {
     /* Members of the class. */
     private static Set<Room> hotelRooms;
-    private static Hotel instance;
+    private static volatile Hotel instance;
     private String hotelName;
     private static ErrorWritable errorLogger;
-    private static RoomFactory factory;
+    private static FactoryRoomCreational factory;
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
-    private Hotel(ErrorWritable errorLogger)
-    {
-        Hotel.errorLogger = errorLogger;
-    }
+    private Hotel() {}
     /*----------------------------------------------------------------------*/
 
     /* Methods of the class. */
@@ -28,12 +25,17 @@ public class Hotel
     {
         if (instance == null)
         {
-            hotelRooms = new HashSet<>();
-            errorLogger = new ErrorLogWriter();
-            instance = new Hotel(errorLogger);
-            factory = new RoomFactory();
-            Hotel.initialize();
-            return instance;
+            synchronized (Hotel.class)
+            {
+                if(instance == null)
+                {
+                    hotelRooms = new HashSet<>();
+                    errorLogger = new ErrorLogWriter();
+                    instance = new Hotel();
+                    factory = new RoomFactory();
+                    return instance;
+                }
+            }
         }
         return instance;
     }
@@ -82,26 +84,24 @@ public class Hotel
 
     }
 
-    public static void initialize()
+    public void initialize()
     {
-        try
-        {
-            factory.createNotification(RoomTypes.SINGLE_ROOM);
-            factory.createNotification(RoomTypes.DOUBLE_ROOM);
-            factory.createNotification(RoomTypes.DELUXE_ROOM);
-            factory.createNotification(RoomTypes.PRESIDENT_ROOM);
-        }
-        catch (InvalidRoomSelectionException e)
-        {
-            errorLogger.writeToErrorLog(e);
-        }
-
         int numberOfHotelRooms = 20;
         int ROOM_INCREMENT = 1;
 
         for(int index = 1; index < numberOfHotelRooms + ROOM_INCREMENT; index++)
         {
-
+            try
+            {
+                factory.createRoom(RoomTypes.SINGLE_ROOM);
+                factory.createRoom(RoomTypes.DOUBLE_ROOM);
+                factory.createRoom(RoomTypes.DELUXE_ROOM);
+                factory.createRoom(RoomTypes.PRESIDENT_ROOM);
+            }
+            catch (InvalidRoomTypeException e)
+            {
+                errorLogger.writeToErrorLog(e);
+            }
         }
     }
 
