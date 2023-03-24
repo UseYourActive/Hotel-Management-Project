@@ -5,7 +5,7 @@ public enum RoomTypes
     DELUXE_ROOM("Deluxe room"),
     PRESIDENT_ROOM("President room");
 
-    private String roomType;
+    private final String roomType;
     RoomTypes(String roomType)
     {
         this.roomType = roomType;
@@ -17,7 +17,8 @@ public enum RoomTypes
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return roomType;
     }
 }
