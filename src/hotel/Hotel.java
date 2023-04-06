@@ -1,5 +1,12 @@
+package hotel;
+
+import rooms.FactoryRoomCreational;
+import rooms.Room;
+import rooms.RoomFactory;
+import rooms.RoomTypes;
 import errorlogger.ErrorLogWriter;
 import errorlogger.ErrorWritable;
+import exceptions.InvalidRoomTypeException;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -10,7 +17,7 @@ public class Hotel
 {
     /* Members of the class. */
     private static Set<Room> hotelRooms;
-    private static volatile Hotel instance;
+    private static final Hotel instance = new Hotel(); // Eager singleton
     private String hotelName;
     private static ErrorWritable errorLogger;
     private static FactoryRoomCreational factory;
@@ -23,20 +30,9 @@ public class Hotel
     /* Methods of the class. */
     public static Hotel getInstance()
     {
-        if (instance == null)
-        {
-            synchronized (Hotel.class)
-            {
-                if(instance == null)
-                {
-                    hotelRooms = new HashSet<>();
-                    errorLogger = new ErrorLogWriter();
-                    instance = new Hotel();
-                    factory = new RoomFactory();
-                    return instance;
-                }
-            }
-        }
+        hotelRooms = new HashSet<>();
+        errorLogger = new ErrorLogWriter();
+        factory = new RoomFactory();
         return instance;
     }
     // Da opravq findAvailableRoom metodite
@@ -114,7 +110,7 @@ public class Hotel
     {
         StringBuilder stringBuilder = new StringBuilder();
 
-        stringBuilder.append("Hotel name: ").append(this.hotelName).append("\n");
+        stringBuilder.append("hotel.Hotel name: ").append(this.hotelName).append("\n");
 
         for(Room room : hotelRooms)
         {
