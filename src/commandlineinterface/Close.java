@@ -4,15 +4,21 @@ public class Close implements Commandable
 {
     /* Members of the class. */
     /*----------------------------------------------------------------------*/
-
+    private static Close instance;
     /* Constructor of the class. */
+    private Close(){}
     /*----------------------------------------------------------------------*/
 
     /* Methods of the class. */
-    @Override
-    public void executeCommand()
+    public static Close getInstance()
     {
+        if(instance == null)
+        {
+            instance = new Close();
+            return instance;
+        }
 
+        return instance;
     }
     /*----------------------------------------------------------------------*/
 

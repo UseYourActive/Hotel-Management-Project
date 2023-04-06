@@ -1,5 +1,7 @@
 package commandlineinterface;
 
+import exceptions.InvalidCommandException;
+
 public class CommandFactory
 {
     /* Members of the class. */
@@ -9,7 +11,7 @@ public class CommandFactory
     /*----------------------------------------------------------------------*/
 
     /* Methods of the class. */
-    public Commandable createRoom(Commands command) throws InvalidCommandException
+    public Commandable createCommand(Commands command) throws InvalidCommandException
     {
         Commandable commandObject;
 
@@ -21,22 +23,22 @@ public class CommandFactory
         switch (command)
         {
             case OPEN:
-                commandObject = new Open();
+                commandObject = Open.getInstance();
                 break;
             case CLOSE:
-                commandObject = new Close();
+                commandObject = Close.getInstance();
                 break;
             case SAVE:
-                commandObject = new Save();
+                commandObject = Save.getInstance();
                 break;
             case SAVE_AS:
-                commandObject = new SaveAs();
+                commandObject = SaveAs.getInstance();
                 break;
             case HELP:
-                commandObject = new Help();
+                commandObject = Help.getInstance();
                 break;
             case EXIT:
-                commandObject = new Exit();
+                commandObject = Exit.getInstance();
                 break;
             default:
                 throw new InvalidCommandException("Please enter a valid command!");

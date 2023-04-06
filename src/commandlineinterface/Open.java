@@ -3,16 +3,23 @@ package commandlineinterface;
 public class Open implements Commandable
 {
     /* Members of the class. */
+    private static Open instance;
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
+    private Open(){}
     /*----------------------------------------------------------------------*/
 
     /* Methods of the class. */
-    @Override
-    public void executeCommand()
+    public static Open getInstance()
     {
+        if(instance == null)
+        {
+            instance = new Open();
+            return instance;
+        }
 
+        return instance;
     }
     /*----------------------------------------------------------------------*/
 
