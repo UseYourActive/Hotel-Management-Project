@@ -1,31 +1,32 @@
-public class PresidentRoom extends Room// za 4ma
+package rooms;
+
+public enum RoomTypes
 {
     /* Members of the class. */
+    SINGLE_ROOM("Single room"),
+    DOUBLE_ROOM("Double room"),
+    DELUXE_ROOM("Deluxe room"),
+    PRESIDENT_ROOM("President room");
+
+    private final String roomType;
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
-    public PresidentRoom(int numberOfBeds)
+    RoomTypes(String roomType)
     {
-        super(numberOfBeds);
+        this.roomType = roomType;
     }
     /*----------------------------------------------------------------------*/
 
     /* Methods of the class. */
-    /*----------------------------------------------------------------------*/
-
-    /* Overrides. */
-    @Override
-    public String createRoom()
-    {
-        return this.toString();
-    }
-
     @Override
     public String toString()
     {
-        return "PresidentRoom{}";
+        return roomType;
     }
+    /*----------------------------------------------------------------------*/
 
+    /* Overrides. */
     /*----------------------------------------------------------------------*/
 
     /* Accessors and Mutators of the class. */

@@ -1,10 +1,16 @@
+package rooms;
+
+import exceptions.GuestAlreadyInRoomException;
+import guest.Guest;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Room implements RoomCreator
 {
     /* Members of the class. */
-    private int number = 1; //////////////////////// da izmislq numbera kakvo da go pravq
+    private final long number;
+    private static long objectCounter;
     private int numberOfBeds;
     private int numberOfGuests; // Не е задължителен параметър -> трябва функция
     private String note;
@@ -15,7 +21,8 @@ public abstract class Room implements RoomCreator
     /* Constructor of the class. */
     public Room(int numberOfBeds)
     {
-        number++;
+        objectCounter++;
+        number = objectCounter;
         this.numberOfBeds = numberOfBeds;
         this.numberOfGuests = 0;
         this.isAvailable = true;
@@ -42,10 +49,7 @@ public abstract class Room implements RoomCreator
     {
         StringBuilder stringBuilder = new StringBuilder();
 
-        if(!(this.number <= 0))
-        {
-            stringBuilder.append("Number of room: ")        .append(this.number)                .append("\n");
-        }
+        stringBuilder.append("Number of room: ")            .append(this.number)                .append("\n");
 
         if(!(this.numberOfBeds <= 0))
         {
@@ -69,7 +73,7 @@ public abstract class Room implements RoomCreator
     /*----------------------------------------------------------------------*/
 
     /* Accessors and Mutators of the class. */
-    public int getNumber()
+    public long getNumber()
     {
         return number;
     }

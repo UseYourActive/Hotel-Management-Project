@@ -1,10 +1,12 @@
-public class SingleRoom extends Room // za 1
+package rooms;
+
+public class DeluxeRoom extends Room// za 3ma
 {
     /* Members of the class. */
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
-    public SingleRoom(int numberOfBeds)
+    public DeluxeRoom(int numberOfBeds)
     {
         super(numberOfBeds);
     }
@@ -23,7 +25,7 @@ public class SingleRoom extends Room // za 1
     @Override
     public String toString()
     {
-        return "SingleRoom{}";
+        return "Rooms.DeluxeRoom{}";
     }
 
     /*----------------------------------------------------------------------*/

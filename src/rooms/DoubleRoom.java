@@ -1,3 +1,5 @@
+package rooms;
+
 public class DoubleRoom extends Room // za 2ma
 {
     /* Members of the class. */
@@ -23,7 +25,7 @@ public class DoubleRoom extends Room // za 2ma
     @Override
     public String toString()
     {
-        return "DoubleRoom{}";
+        return "Rooms.DoubleRoom{}";
     }
 
     /*----------------------------------------------------------------------*/

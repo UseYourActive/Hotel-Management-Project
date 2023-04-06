@@ -1,3 +1,7 @@
+package rooms;
+
+import exceptions.InvalidRoomTypeException;
+
 public class RoomFactory implements FactoryRoomCreational
 {
     /* Members of the class. */
