@@ -1,8 +1,10 @@
+package exceptions;
+
 public class InvalidRoomTypeException extends Exception
 {
     InvalidRoomTypeException(){}
 
-    InvalidRoomTypeException(String message)
+    public InvalidRoomTypeException(String message)
     {
         super(message);
     }
@@ -12,7 +14,7 @@ public class InvalidRoomTypeException extends Exception
         super(cause);
     }
 
-    InvalidRoomTypeException(String message, Throwable cause)
+    public InvalidRoomTypeException(String message, Throwable cause)
     {
         super(message, cause);
     }

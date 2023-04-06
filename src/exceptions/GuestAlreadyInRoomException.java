@@ -1,3 +1,5 @@
+package exceptions;
+
 public class GuestAlreadyInRoomException extends Exception
 {
     GuestAlreadyInRoomException(){}
@@ -11,7 +13,7 @@ public class GuestAlreadyInRoomException extends Exception
         super(cause);
     }
 
-    GuestAlreadyInRoomException(String message, Throwable cause)
+    public GuestAlreadyInRoomException(String message, Throwable cause)
     {
         super(message, cause);
     }

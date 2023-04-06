@@ -1,10 +1,10 @@
-package commandlineinterface;
+package exceptions;
 
 public class InvalidCommandException extends Exception
 {
     InvalidCommandException(){}
 
-    InvalidCommandException(String message)
+    public InvalidCommandException(String message)
     {
         super(message);
     }
@@ -13,7 +13,7 @@ public class InvalidCommandException extends Exception
         super(cause);
     }
 
-    InvalidCommandException(String message, Throwable cause)
+    public InvalidCommandException(String message, Throwable cause)
     {
         super(message, cause);
     }
