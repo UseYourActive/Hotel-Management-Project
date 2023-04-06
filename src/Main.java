@@ -1,34 +1,33 @@
-import errorlogger.ErrorLogWriter;
-import errorlogger.ErrorWritable;
-import org.w3c.dom.Document;
+import guest.Guest;
 import org.xml.sax.SAXException;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.File;
-import java.io.FileWriter;
+import javax.xml.transform.TransformerException;
 import java.io.IOException;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class Main
 {
     public static void main(String[] args)
     {
-        // Error logger-a ne suzdava fail - mamka mu
+        Scanner scanner = new Scanner(System.in);
 
-        ErrorWritable errorLogWriter = new ErrorLogWriter();
-        RoomFactory factory = new RoomFactory();
+//        String firstName = scanner.nextLine();
+//        String secondName = scanner.nextLine();
+//        String lastName = scanner.nextLine();
+//        String uniqueIdentificationNumber = scanner.nextLine();
+//        String phoneNumber = scanner.nextLine();
+
+        Guest guest = new Guest.Builder("Test1","Test1","Test1","Test1","Test1").build();
+        XMLParser xmlParser = new XMLParser();
         try
         {
-            factory.createNotification(RoomTypes.SINGLE_ROOM);
+            System.out.println(xmlParser.readXML());
+            xmlParser.writeToXML(guest);
         }
-        catch (InvalidRoomSelectionException e)
+        catch (ParserConfigurationException | IOException | SAXException | TransformerException e)
         {
-            errorLogWriter.writeToErrorLog(e);
+            throw new RuntimeException(e);
         }
     }
 }
@@ -83,7 +82,7 @@ public class Main
 //        try
 //        {
 //            DocumentBuilder documentBuilder = factory.newDocumentBuilder();
-//            Document doc = documentBuilder.parse("neshto.xml");
+//            Document doc = documentBuilder.parse("guests.xml");
 //        }
 //        catch (ParserConfigurationException e)
 //        {
