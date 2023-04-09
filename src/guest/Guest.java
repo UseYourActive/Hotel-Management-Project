@@ -3,8 +3,8 @@ package guest;
 public class Guest
 {
     /* Members of the class. */
-    private long id;
-    private static long objectCounter;
+    private final long id;
+    private static long guestCounter;
     private String firstName;
     private String secondName;
     private String lastName;
@@ -16,7 +16,7 @@ public class Guest
     public static class Builder
     {
         private long id;
-        private static long objectCounter;
+        private static long guestCounter;
         private final String firstName;
         private final String secondName;
         private final String lastName;
@@ -30,8 +30,8 @@ public class Guest
             this.lastName = lastName;
             this.uniqueIdentificationNumber = uniqueIdentificationNumber;
             this.phoneNumber = phoneNumber;
-            objectCounter++;
-            this.id = objectCounter;
+            guestCounter++;
+            this.id = guestCounter;
         }
 
         public Builder withID(long id)
@@ -54,8 +54,8 @@ public class Guest
         this.lastName = lastName;
         this.uniqueIdentificationNumber = uniqueIdentificationNumber;
         this.phoneNumber = phoneNumber;
-        objectCounter++;
-        this.id = objectCounter;
+        guestCounter++;
+        this.id = guestCounter;
     }
     /*----------------------------------------------------------------------*/
 
