@@ -2,5 +2,5 @@ package rooms;
 
 public interface RoomCreator
 {
-    String createRoom();
+    <T> T createRoom();
 }
