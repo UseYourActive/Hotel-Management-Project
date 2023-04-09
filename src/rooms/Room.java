@@ -10,22 +10,23 @@ public abstract class Room implements RoomCreator
 {
     /* Members of the class. */
     private final long number;
-    private static long objectCounter;
+    private static long roomCounter;
     private int numberOfBeds;
     private int numberOfGuests; // Не е задължителен параметър -> трябва функция
     private String note;
     private boolean isAvailable;
-    private List<Guest> guestList = new ArrayList<>();
+    private List<Guest> guestList;
     /*----------------------------------------------------------------------*/
 
     /* Constructor of the class. */
     public Room(int numberOfBeds)
     {
-        objectCounter++;
-        number = objectCounter;
+        roomCounter++;
+        number = roomCounter;
         this.numberOfBeds = numberOfBeds;
         this.numberOfGuests = 0;
         this.isAvailable = true;
+        guestList = new ArrayList<>();
     }
     /*----------------------------------------------------------------------*/
 
@@ -34,11 +35,12 @@ public abstract class Room implements RoomCreator
     {
         if(guestList.contains(guest))
         {
-            throw new GuestAlreadyInRoomException("This guest is already assigned in the room!", new RuntimeException());
+            throw new GuestAlreadyInRoomException("This guest is already assigned in a room!", new RuntimeException());
         }
         else
         {
             guestList.add(guest);
+            this.numberOfGuests++;
         }
     }
     /*----------------------------------------------------------------------*/
@@ -101,6 +103,11 @@ public abstract class Room implements RoomCreator
     public String getNote()
     {
         return note;
+    }
+
+    public List<Guest> getGuestList()
+    {
+        return guestList;
     }
 
     public void setNote(String note)
