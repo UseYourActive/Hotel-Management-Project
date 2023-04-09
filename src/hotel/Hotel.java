@@ -1,22 +1,19 @@
 package hotel;
 
-import rooms.FactoryRoomCreational;
-import rooms.Room;
-import rooms.RoomFactory;
-import rooms.RoomTypes;
+import guest.Guest;
+import rooms.*;
 import errorlogger.ErrorLogWriter;
 import errorlogger.ErrorWritable;
 import exceptions.InvalidRoomTypeException;
 
 import java.time.LocalDate;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 public class Hotel
 {
     /* Members of the class. */
-    private static Set<Room> hotelRooms;
+    private static List<Room> hotelRooms;
     private static final Hotel instance = new Hotel(); // Eager singleton
     private String hotelName;
     private static ErrorWritable errorLogger;
@@ -30,14 +27,58 @@ public class Hotel
     /* Methods of the class. */
     public static Hotel getInstance()
     {
-        hotelRooms = new HashSet<>();
+        hotelRooms = new ArrayList<>();
         errorLogger = new ErrorLogWriter();
         factory = new RoomFactory();
         return instance;
     }
-    // Da opravq findAvailableRoom metodite
-    public String findAvailableRoom()
+
+    public void checkIn(Room room, Date from, Date to, String note, List<Guest> guestList)
     {
+//        Регистриране в стая с номер <room> от дата <from> до дата <to> и се добавя бележка <note>.
+//        Незадължителният параметър <guests> задава броя на гостите, настанени в стаята.
+//        Ако той не е указан, се счита, че броят на настанените гости е равен на броя на леглата в стаята.
+//        Пример: checkin 229 2020-03-23 2020-03-31 The Simpsons
+    }
+
+    public void availability(Date date)
+    {
+//        Извежда списък на свободните стаи на дата <date>, ако не е зададена, се използва текущата дата.
+    }
+
+    public void checkOut(Room room)
+    {
+//        Освобождаване на заета стая с номер <room>.
+    }
+
+    public void report(Date from, Date to)
+    {
+//        Извежда справка за използването на стаи в периода от дата <from> до <to>.
+//        Извежда се списък, в който за всяка стая, използвана в дадения период, се извежда и броя на дните, в които е била използвана.
+    }
+
+    public String find(int numberOfBeds, Date from, Date to)
+    {
+//        Намиране на подходяща свободна стая с поне <beds> на брой легла в периода от <from> до <to>.
+//        При наличие на повече свободни стаи се предпочитат такива с по-малко на брой легла.
+
+        StringBuilder availableRooms = new StringBuilder();
+
+        for (Room room : hotelRooms) {
+            if (room.isAvailable()) {
+                availableRooms.append("\n").append("\n").append(room);
+            }
+        }
+
+        return String.valueOf(availableRooms);
+    }
+
+    public String find()
+    {
+//        Намиране на подходяща свободна стая с поне <beds> на брой легла в периода от <from> до <to>.
+//        При наличие на повече свободни стаи се предпочитат такива с по-малко на брой легла.
+
+
         LocalDate today = LocalDate.now();
 
         StringBuilder availableRooms = new StringBuilder();
@@ -51,8 +92,11 @@ public class Hotel
         return String.valueOf(availableRooms);
     }
 
-    public String findAvailableRoom(Date date)
+    public String findImportant(int numberOfBeds, Date from, Date to)
     {
+//        Да се реализира алгоритъм, който предлага спешно намиране на стая за важен гост в случай на липса на свободни стаи за даден период.
+//        Алгоритъмът да предлага разместване на настанените от най-много две стаи.
+
         StringBuilder availableRooms = new StringBuilder();
 
         for (Room room : hotelRooms) {
@@ -63,6 +107,34 @@ public class Hotel
 
         return String.valueOf(availableRooms);
     }
+
+    public void unavailable(Room room, Date from, Date to, String note)
+    {
+//        Обявява стаята с номер <room> от дата <from> до дата <to> за временно недостъпна и се добавя бележка <note>.
+//        В стаята няма регистриран гост, но никой не може да бъде настанен в нея.
+//        Пример: unavailable 200 2018-06-01 2019-03-01 Under construction
+    }
+
+
+//    Бонуси: ●  гостите на хотела да могат да се записват по стая за различни дейности от даден списък при настаняване.
+//    да се извежда списък на програмата на една стая
+//    да се извежда списък на всички записали се за дадена дейност
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public String showAllRooms()
     {
@@ -75,24 +147,19 @@ public class Hotel
         return String.valueOf(allRooms);
     }
 
-    public void checkout(Room room)
-    {
-
-    }
-
     public void initialize()
     {
-        int numberOfHotelRooms = 20;
+        int NUMBER_OF_HOTEL_ROOM_INITIALIZATIONS = 5;
         int ROOM_INCREMENT = 1;
 
-        for(int index = 1; index < numberOfHotelRooms + ROOM_INCREMENT; index++)
+        for(int index = 1; index < NUMBER_OF_HOTEL_ROOM_INITIALIZATIONS + ROOM_INCREMENT; index++)
         {
             try
             {
-                factory.createRoom(RoomTypes.SINGLE_ROOM);
-                factory.createRoom(RoomTypes.DOUBLE_ROOM);
-                factory.createRoom(RoomTypes.DELUXE_ROOM);
-                factory.createRoom(RoomTypes.PRESIDENT_ROOM);
+                hotelRooms.add((SingleRoom) factory.createRoom(RoomTypes.SINGLE_ROOM));
+                hotelRooms.add((DoubleRoom) factory.createRoom(RoomTypes.DOUBLE_ROOM));
+                hotelRooms.add((DeluxeRoom) factory.createRoom(RoomTypes.DELUXE_ROOM));
+                hotelRooms.add((PresidentRoom) factory.createRoom(RoomTypes.PRESIDENT_ROOM));
             }
             catch (InvalidRoomTypeException e)
             {
@@ -110,7 +177,7 @@ public class Hotel
     {
         StringBuilder stringBuilder = new StringBuilder();
 
-        stringBuilder.append("hotel.Hotel name: ").append(this.hotelName).append("\n");
+        stringBuilder.append("Hotel name: ").append(this.hotelName).append("\n");
 
         for(Room room : hotelRooms)
         {
