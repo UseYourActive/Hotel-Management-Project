@@ -8,7 +8,7 @@ import java.util.List;
 
 public abstract class Room implements RoomCreator
 {
-    /* Members of the class. */
+    //region Members of the class
     private final long number;
     private static long roomCounter;
     private int numberOfBeds;
@@ -16,9 +16,9 @@ public abstract class Room implements RoomCreator
     private String note;
     private boolean isAvailable;
     private List<Guest> guestList;
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     public Room(int numberOfBeds)
     {
         roomCounter++;
@@ -28,9 +28,9 @@ public abstract class Room implements RoomCreator
         this.isAvailable = true;
         guestList = new ArrayList<>();
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
     public void addGuest(Guest guest) throws GuestAlreadyInRoomException
     {
         if(guestList.contains(guest))
@@ -43,9 +43,9 @@ public abstract class Room implements RoomCreator
             this.numberOfGuests++;
         }
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
+    //region Overrides
     @Override
     public String toString()
     {
@@ -72,9 +72,9 @@ public abstract class Room implements RoomCreator
 
         return String.valueOf(stringBuilder);
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Accessors and Mutators of the class. */
+    //region Accessors and Mutators of the class
     public long getNumber()
     {
         return number;
@@ -124,5 +124,5 @@ public abstract class Room implements RoomCreator
     {
         isAvailable = available;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 }

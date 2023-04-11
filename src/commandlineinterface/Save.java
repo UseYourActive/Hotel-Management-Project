@@ -5,17 +5,17 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Save implements Commandable
+public class Save implements Command
 {
-    /* Members of the class. */
+    //region Members of the class
     private static Save instance;
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     private Save(){}
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
     public static Save getInstance()
     {
         if(instance == null)
@@ -33,11 +33,11 @@ public class Save implements Commandable
         bufferedWriter.write(data);
         bufferedWriter.close();
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

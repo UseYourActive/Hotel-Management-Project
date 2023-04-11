@@ -12,19 +12,19 @@ import java.util.*;
 
 public class Hotel
 {
-    /* Members of the class. */
+    //region Members of the class
     private static List<Room> hotelRooms;
     private static final Hotel instance = new Hotel(); // Eager singleton
     private String hotelName;
     private static ErrorWritable errorLogger;
     private static FactoryRoomCreational factory;
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     private Hotel() {}
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
     public static Hotel getInstance()
     {
         hotelRooms = new ArrayList<>();
@@ -169,9 +169,9 @@ public class Hotel
     }
 
     // add rooms or initialize them to be already in the list!
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
+    //region Overrides
     @Override
     public String toString()
     {
@@ -186,12 +186,12 @@ public class Hotel
 
         return String.valueOf(stringBuilder);
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Accessors and Mutators of the class. */
+    //region Accessors and Mutators of the class
     public void setHotelName(String hotelName)
     {
         this.hotelName = hotelName;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 }

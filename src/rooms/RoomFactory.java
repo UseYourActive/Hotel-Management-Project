@@ -4,13 +4,14 @@ import exceptions.InvalidRoomTypeException;
 
 public class RoomFactory implements FactoryRoomCreational
 {
-    /* Members of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Members of the class
+    //endregion
 
-    /* Constructor of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Constructor of the class
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
+    @SuppressWarnings("All")
     public RoomCreator createRoom(RoomTypes roomType) throws InvalidRoomTypeException
     {
         RoomCreator roomCreator;
@@ -40,11 +41,11 @@ public class RoomFactory implements FactoryRoomCreational
 
         return roomCreator;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

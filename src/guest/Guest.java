@@ -2,7 +2,7 @@ package guest;
 
 public class Guest
 {
-    /* Members of the class. */
+    //region Members of the class
     private final long id;
     private static long guestCounter;
     private String firstName;
@@ -10,9 +10,9 @@ public class Guest
     private String lastName;
     private String uniqueIdentificationNumber; // ЕГН
     private String phoneNumber;
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Builder of the class. */
+    //region Builder of the class
     public static class Builder
     {
         private long id;
@@ -44,9 +44,9 @@ public class Guest
             return new Guest(firstName,secondName,lastName,uniqueIdentificationNumber,phoneNumber);
         }
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     private Guest(String firstName, String secondName, String lastName, String uniqueIdentificationNumber, String phoneNumber)
     {
         this.firstName = firstName;
@@ -57,12 +57,12 @@ public class Guest
         guestCounter++;
         this.id = guestCounter;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Methods of the class
+    //endregion
 
-    /* Overrides. */
+    //region Overrides
     @Override
     public String toString()
     {
@@ -77,9 +77,9 @@ public class Guest
 
        return String.valueOf(stringBuilder);
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Accessors and Mutators of the class. */
+    //region Accessors and Mutators of the class
     public String getFirstName()
     {
         return firstName;
@@ -125,5 +125,5 @@ public class Guest
     {
         this.phoneNumber = phoneNumber;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 }

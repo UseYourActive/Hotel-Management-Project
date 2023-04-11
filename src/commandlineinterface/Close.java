@@ -1,15 +1,16 @@
 package commandlineinterface;
 
-public class Close implements Commandable
+public class Close implements Command
 {
-    /* Members of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Members of the class
     private static Close instance;
-    /* Constructor of the class. */
-    private Close(){}
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Constructor of the class
+    private Close(){}
+    //endregion
+
+    //region Methods of the class
     public static Close getInstance()
     {
         if(instance == null)
@@ -20,11 +21,11 @@ public class Close implements Commandable
 
         return instance;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

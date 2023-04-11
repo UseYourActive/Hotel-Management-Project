@@ -5,17 +5,17 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class SaveAs implements Commandable
+public class SaveAs implements Command
 {
-    /* Members of the class. */
+    //region Members of the class
     private static SaveAs instance;
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     private SaveAs(){}
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
     public static SaveAs getInstance()
     {
         if(instance == null)
@@ -42,11 +42,11 @@ public class SaveAs implements Commandable
 
         bufferedWriter.close();
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

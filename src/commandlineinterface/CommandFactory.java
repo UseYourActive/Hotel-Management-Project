@@ -4,16 +4,16 @@ import exceptions.InvalidCommandException;
 
 public class CommandFactory
 {
-    /* Members of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Members of the class.
+    //endregion
 
-    /* Constructor of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Constructor of the class.
+    //endregion
 
-    /* Methods of the class. */
-    public Commandable createCommand(Commands command) throws InvalidCommandException
+    //region Methods of the class.
+    public Command createCommand(Commands command) throws InvalidCommandException
     {
-        Commandable commandObject;
+        Command commandObject;
 
         if(command == null)
         {
@@ -46,11 +46,11 @@ public class CommandFactory
 
         return commandObject;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides.
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class.
+    //endregion
 }

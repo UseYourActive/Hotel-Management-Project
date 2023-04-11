@@ -7,15 +7,15 @@ import java.nio.file.Paths;
 
 public class ErrorLogWriter implements ErrorWritable
 {
-    /* Members of the class. */
+    //region Members of the class
     private final static String ERROR_LOG_PATH = String.valueOf(Paths.get("ErrorLog.txt"));
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     public ErrorLogWriter(){}
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
     @Override
     public final void writeToErrorLog(Exception e)
     {
@@ -31,11 +31,11 @@ public class ErrorLogWriter implements ErrorWritable
             throw new RuntimeException("Could not write the exception to the file.", blowUp);
         }
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

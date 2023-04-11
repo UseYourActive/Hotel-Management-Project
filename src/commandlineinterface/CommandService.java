@@ -2,18 +2,18 @@ package commandlineinterface;
 
 public class CommandService
 {
-    /* Members of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Members of the class
+    //endregion
 
-    /* Constructor of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Constructor of the class
+    //endregion
 
-    /* Methods of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Methods of the class
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

@@ -13,15 +13,15 @@ import java.util.List;
 
 public class XMLParser
 {
-    /* Members of the class. */
+    //region Members of the class
     private final static String XML_GUESTS_FILE_PATHWAY = String.valueOf(Paths.get("guests.xml"));
     private final static String XML_ROOMS_FILE_PATHWAY = String.valueOf(Paths.get("rooms.xml"));
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Constructor of the class
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
     public void writeXML()
     {
 
@@ -121,11 +121,11 @@ public class XMLParser
     {
         
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

@@ -1,6 +1,6 @@
 package commandlineinterface;
 
-public interface Commandable
+public interface Command
 {
 
 }

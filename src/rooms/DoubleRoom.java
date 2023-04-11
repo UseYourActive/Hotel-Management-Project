@@ -2,24 +2,24 @@ package rooms;
 
 public class DoubleRoom extends Room // za 2ma
 {
-    /* Members of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Members of the class
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     public DoubleRoom(int numberOfBeds)
     {
         super(numberOfBeds);
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Methods of the class
+    //endregion
 
-    /* Overrides. */
+    //region Overrides
     @Override
-    public DoubleRoom createRoom()
+    public String createRoom()
     {
-        return this;
+        return this.toString();
     }
 
     @Override
@@ -35,8 +35,8 @@ public class DoubleRoom extends Room // za 2ma
 
         return String.valueOf(stringBuilder);
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

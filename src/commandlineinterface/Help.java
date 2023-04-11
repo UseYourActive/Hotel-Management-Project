@@ -1,16 +1,16 @@
 package commandlineinterface;
 
-public class Help implements Commandable
+public class Help implements Command
 {
-    /* Members of the class. */
+    //region Members of the class
     private static Help instance;
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     private Help(){}
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
     public static Help getInstance()
     {
         if(instance == null)
@@ -34,11 +34,11 @@ public class Help implements Commandable
                 exit               exits the program
                 """);
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

@@ -1,16 +1,16 @@
 package commandlineinterface;
 
-public class Exit implements Commandable
+public class Exit implements Command
 {
-    /* Members of the class. */
+    //region Members of the class
     private static Exit instance;
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     private Exit(){}
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
     public static Exit getInstance()
     {
         if(instance == null)
@@ -21,11 +21,11 @@ public class Exit implements Commandable
 
         return instance;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

@@ -4,14 +4,15 @@ import java.io.File;
 
 public class Validation implements Validator
 {
-    /* Members of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Members of the class
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     public Validation() {}
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
+    @SuppressWarnings("All")
     public boolean isFileOpened(File file)
     {
         if(file != null)
@@ -21,6 +22,7 @@ public class Validation implements Validator
         return false;
     }
 
+    @SuppressWarnings("All")
     public boolean isNullOrEmpty(String string)
     {
         if(string.length() == 0 || string == null)
@@ -29,11 +31,11 @@ public class Validation implements Validator
         }
         return false;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

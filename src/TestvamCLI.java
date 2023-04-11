@@ -13,12 +13,12 @@ public class TestvamCLI
     {
         ErrorWritable errorLogWriter = new ErrorLogWriter();
 
-        Commandable save = Save.getInstance();
-        Commandable open = Open.getInstance();
-        Commandable close = Close.getInstance();
+        Command save = Save.getInstance();
+        Command open = Open.getInstance();
+        Command close = Close.getInstance();
         Help help = Help.getInstance();
-        Commandable exit = Exit.getInstance();
-        Commandable saveAs = SaveAs.getInstance();
+        Command exit = Exit.getInstance();
+        Command saveAs = SaveAs.getInstance();
 
         //CommandService commandService = new CommandService(open, close, save, saveAs, help, exit);
 

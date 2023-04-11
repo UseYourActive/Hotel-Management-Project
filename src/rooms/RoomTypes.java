@@ -2,33 +2,33 @@ package rooms;
 
 public enum RoomTypes
 {
-    /* Members of the class. */
+    //region Members of the class
     SINGLE_ROOM("Single room"),
     DOUBLE_ROOM("Double room"),
     DELUXE_ROOM("Deluxe room"),
     PRESIDENT_ROOM("President room");
 
     private final String roomType;
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     RoomTypes(String roomType)
     {
         this.roomType = roomType;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
     @Override
     public String toString()
     {
         return roomType;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

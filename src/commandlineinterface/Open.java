@@ -1,16 +1,16 @@
 package commandlineinterface;
 
-public class Open implements Commandable
+public class Open implements Command
 {
-    /* Members of the class. */
+    //region Members of the class
     private static Open instance;
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     private Open(){}
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
+    //region Methods of the class
     public static Open getInstance()
     {
         if(instance == null)
@@ -21,11 +21,11 @@ public class Open implements Commandable
 
         return instance;
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Overrides. */
-    /*----------------------------------------------------------------------*/
+    //region Overrides
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }

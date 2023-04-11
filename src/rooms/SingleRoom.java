@@ -2,26 +2,27 @@ package rooms;
 
 public class SingleRoom extends Room // za 1
 {
-    /* Members of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Members of the class
+    //endregion
 
-    /* Constructor of the class. */
+    //region Constructor of the class
     public SingleRoom(int numberOfBeds)
     {
         super(numberOfBeds);
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Methods of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Methods of the class
+    //endregion
 
-    /* Overrides. */
+    //region Overrides
     @Override
-    public SingleRoom createRoom()
+    public String createRoom()
     {
-        return this;
+        return this.toString();
     }
 
+    @SuppressWarnings("All")
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -35,8 +36,8 @@ public class SingleRoom extends Room // za 1
 
         return String.valueOf(stringBuilder);
     }
-    /*----------------------------------------------------------------------*/
+    //endregion
 
-    /* Accessors and Mutators of the class. */
-    /*----------------------------------------------------------------------*/
+    //region Accessors and Mutators of the class
+    //endregion
 }
