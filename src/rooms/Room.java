@@ -4,11 +4,10 @@ import exceptions.GuestAlreadyInRoomException;
 import guest.Guest;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
-public abstract class Room implements RoomCreator
-{
-    //region Members of the class
+public abstract class Room {
     private final long number;
     private static long roomCounter;
     private int numberOfBeds;
@@ -16,47 +15,54 @@ public abstract class Room implements RoomCreator
     private String note;
     private boolean isAvailable;
     private List<Guest> guestList;
-    //endregion
 
-    //region Constructor of the class
-    public Room(int numberOfBeds)
-    {
+    public Room() {
         roomCounter++;
         number = roomCounter;
-        this.numberOfBeds = numberOfBeds;
         this.numberOfGuests = 0;
         this.isAvailable = true;
         guestList = new ArrayList<>();
     }
-    //endregion
 
-    //region Methods of the class
-    public void addGuest(Guest guest) throws GuestAlreadyInRoomException
-    {
-        if(guestList.contains(guest))
-        {
+    public void addGuest(Guest guest) throws GuestAlreadyInRoomException {
+        if(guestList.contains(guest)) {
             throw new GuestAlreadyInRoomException("This guest is already assigned in a room!", new RuntimeException());
-        }
-        else
-        {
+        } else {
             guestList.add(guest);
             this.numberOfGuests++;
         }
     }
-    //endregion
 
-    //region Overrides
-    @Override
-    public String toString()
+//    @Override
+//    public String toString() {
+//        StringBuilder stringBuilder = new StringBuilder();
+//
+//        stringBuilder.append("Room number: ")               .append(this.number)                .append("\n");
+//
+//        stringBuilder.append("Number of beds: ")            .append(this.numberOfBeds)          .append("\n");
+//
+//        if(!(this.numberOfGuests <= 0))
+//        {
+//            stringBuilder.append("Number of guests: ")      .append(this.numberOfGuests)        .append("\n");
+//        }
+//
+//        if((this.note != null) && !(this.note.isEmpty()))
+//        {
+//            stringBuilder.append("Note: ")                  .append(this.note)                  .append("\n");
+//        }
+//
+//        stringBuilder.append("Is available: ")              .append(this.isAvailable)           .append("\n");
+//
+//        return String.valueOf(stringBuilder);
+//    }
+
+    public String displayInfo()
     {
         StringBuilder stringBuilder = new StringBuilder();
 
-        stringBuilder.append("Number of room: ")            .append(this.number)                .append("\n");
+        stringBuilder.append("Room number: ")               .append(this.number)                .append("\n");
 
-        if(!(this.numberOfBeds <= 0))
-        {
-            stringBuilder.append("Number of beds: ")        .append(this.numberOfBeds)          .append("\n");
-        }
+        stringBuilder.append("Number of beds: ")            .append(this.numberOfBeds)          .append("\n");
 
         if(!(this.numberOfGuests <= 0))
         {
@@ -72,57 +78,44 @@ public abstract class Room implements RoomCreator
 
         return String.valueOf(stringBuilder);
     }
-    //endregion
 
-    //region Accessors and Mutators of the class
-    public long getNumber()
-    {
+    public long getNumber() {
         return number;
     }
 
-    public int getNumberOfBeds()
-    {
+    public int getNumberOfBeds() {
         return numberOfBeds;
     }
 
-    public void setNumberOfBeds(int numberOfBeds)
-    {
+    public void setNumberOfBeds(int numberOfBeds) {
         this.numberOfBeds = numberOfBeds;
     }
 
-    public int getNumberOfGuests()
-    {
+    public int getNumberOfGuests() {
         return numberOfGuests;
     }
 
-    public void setNumberOfGuests(int numberOfGuests)
-    {
+    public void setNumberOfGuests(int numberOfGuests) {
         this.numberOfGuests = numberOfGuests;
     }
 
-    public String getNote()
-    {
+    public String getNote() {
         return note;
     }
 
-    public List<Guest> getGuestList()
-    {
+    public List<Guest> getGuestList() {
         return guestList;
     }
 
-    public void setNote(String note)
-    {
+    public void setNote(String note) {
         this.note = note;
     }
 
-    public boolean isAvailable()
-    {
+    public boolean isAvailable() {
         return isAvailable;
     }
 
-    public void setAvailable(boolean available)
-    {
+    public void setAvailable(boolean available) {
         isAvailable = available;
     }
-    //endregion
 }

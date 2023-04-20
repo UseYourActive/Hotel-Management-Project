@@ -1,21 +1,17 @@
 package exceptions;
 
-public class InvalidRoomTypeException extends Exception
-{
+public class InvalidRoomTypeException extends Exception {
     InvalidRoomTypeException(){}
 
-    public InvalidRoomTypeException(String message)
-    {
+    public InvalidRoomTypeException(String message) {
         super(message);
     }
 
-    InvalidRoomTypeException(Throwable cause)
-    {
+    InvalidRoomTypeException(Throwable cause) {
         super(cause);
     }
 
-    public InvalidRoomTypeException(String message, Throwable cause)
-    {
+    public InvalidRoomTypeException(String message, Throwable cause) {
         super(message, cause);
     }
 }

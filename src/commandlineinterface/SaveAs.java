@@ -5,34 +5,23 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class SaveAs implements Command
-{
-    //region Members of the class
+public class SaveAs implements Command {
     private static SaveAs instance;
-    //endregion
 
-    //region Constructor of the class
     private SaveAs(){}
-    //endregion
 
-    //region Methods of the class
-    public static SaveAs getInstance()
-    {
-        if(instance == null)
-        {
+    public static SaveAs getInstance() {
+        if(instance == null) {
             instance = new SaveAs();
             return instance;
         }
-
         return instance;
     }
 
-    public void saveAs(String fileData, String data) throws IOException
-    {
+    public void saveAs(String fileData, String data) throws IOException {
         File file = new File(fileData);
 
-        if(!file.exists())
-        {
+        if(!file.exists()) {
             file.createNewFile();
         }
 
@@ -42,11 +31,4 @@ public class SaveAs implements Command
 
         bufferedWriter.close();
     }
-    //endregion
-
-    //region Overrides
-    //endregion
-
-    //region Accessors and Mutators of the class
-    //endregion
 }

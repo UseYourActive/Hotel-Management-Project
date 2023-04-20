@@ -1,8 +1,6 @@
 package commandlineinterface;
 
-public enum Commands
-{
-    //region Members of the class
+public enum Commands {
     OPEN("Open"),
     CLOSE("Close"),
     SAVE("Save"),
@@ -11,26 +9,13 @@ public enum Commands
     EXIT("Exit");
 
     private final String command;
-    //endregion
 
-    //region Constructor of the class
-    Commands(String roomType)
-    {
+    Commands(String roomType) {
         this.command = roomType;
     }
-    //endregion
 
-    //region Methods of the class
     @Override
-    public String toString()
-    {
+    public String toString() {
         return command;
     }
-    //endregion
-
-    //region Overrides
-    //endregion
-
-    //region Accessors and Mutators of the class
-    //endregion
 }

@@ -1,25 +1,8 @@
 package rooms;
 
-public class PresidentRoom extends Room// za 4ma
-{
-    //region Members of the class
-    //endregion
-
-    //region Constructor of the class
-    public PresidentRoom(int numberOfBeds)
-    {
-        super(numberOfBeds);
-    }
-    //endregion
-
-    //region Methods of the class
-    //endregion
-
-    //region Overrides
-    @Override
-    public String createRoom()
-    {
-        return this.toString();
+public class PresidentRoom extends Room {
+    public PresidentRoom() {
+        setNumberOfBeds(4);
     }
 
     @Override
@@ -31,12 +14,8 @@ public class PresidentRoom extends Room// za 4ma
         stringBuilder.append("Number of beds: ").append(getNumberOfBeds()).append("\n");
         stringBuilder.append("Note: ").append(getNote()).append("\n");
         stringBuilder.append("Number of guests: ").append(getNumberOfGuests()).append("\n");
-        stringBuilder.append("Guest list: ").append(getGuestList()).append("\n");
+        //stringBuilder.append("Guest list: ").append(getGuestList()).append("\n");
 
         return String.valueOf(stringBuilder);
     }
-    //endregion
-
-    //region Accessors and Mutators of the class
-    //endregion
 }

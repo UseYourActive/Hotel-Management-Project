@@ -2,16 +2,9 @@ package commandlineinterface;
 
 import java.io.File;
 
-public class Validation implements Validator
-{
-    //region Members of the class
-    //endregion
-
-    //region Constructor of the class
+public class Validation implements Validator {
     public Validation() {}
-    //endregion
 
-    //region Methods of the class
     @SuppressWarnings("All")
     public boolean isFileOpened(File file)
     {
@@ -23,19 +16,10 @@ public class Validation implements Validator
     }
 
     @SuppressWarnings("All")
-    public boolean isNullOrEmpty(String string)
-    {
-        if(string.length() == 0 || string == null)
-        {
+    public boolean isNullOrEmpty(String string) {
+        if(string.length() == 0 || string == null) {
             return true;
         }
         return false;
     }
-    //endregion
-
-    //region Overrides
-    //endregion
-
-    //region Accessors and Mutators of the class
-    //endregion
 }

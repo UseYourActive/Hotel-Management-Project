@@ -4,13 +4,11 @@ import errorlogger.ErrorWritable;
 
 import java.util.Scanner;
 
-public class TestvamCLI
-{
+public class TestvamCLI {
     private static String currentFileName = "";
     private static boolean isFileOpen = false;
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         ErrorWritable errorLogWriter = new ErrorLogWriter();
 
         Command save = Save.getInstance();
@@ -31,54 +29,45 @@ public class TestvamCLI
 
             String[] commandParts = command.split("\\s+");
 
-            if (commandParts[0].equalsIgnoreCase("open"))
-            {
-                if (commandParts.length != 2)
-                {
+            if (commandParts[0].equalsIgnoreCase("open")) {
+                if (commandParts.length != 2) {
                     System.out.println("Usage: open <filename>");
                     continue;
                 }
                 openFile(commandParts[1]);
             }
 
-            else if (commandParts[0].equalsIgnoreCase("close"))
-            {
+            else if (commandParts[0].equalsIgnoreCase("close")) {
                 closeFile();
             }
 
-            else if (commandParts[0].equalsIgnoreCase("save"))
-            {
+            else if (commandParts[0].equalsIgnoreCase("save")) {
                 saveFile(currentFileName);
             }
 
-            else if (commandParts[0].equalsIgnoreCase("save as"))
-            {
-                if (commandParts.length != 2)
-                {
+            else if (commandParts[0].equalsIgnoreCase("save as")) {
+                if (commandParts.length != 2) {
                     System.out.println("Usage: save as <filename>");
                     continue;
                 }
                 saveFile(commandParts[1]);
             }
 
-            else if (commandParts[0].equalsIgnoreCase("help"))
-            {
+            else if (commandParts[0].equalsIgnoreCase("help")) {
                 help.execute();
             }
 
-            else if (!commandParts[0].equalsIgnoreCase("exit"))
-            {
+            else if (!commandParts[0].equalsIgnoreCase("exit")) {
                 System.out.println("Unknown command. Type 'help' for a list of commands.");
             }
         }
         while (!command.equalsIgnoreCase("exit"));
+
         scanner.close();
     }
 
-    private static void openFile(String fileName)
-    {
-        if (isFileOpen)
-        {
+    private static void openFile(String fileName) {
+        if (isFileOpen) {
             System.out.println("A file is already open. Close it first.");
             return;
         }
@@ -97,10 +86,8 @@ public class TestvamCLI
         isFileOpen = false;
     }
 
-    private static void saveFile(String fileName)
-    {
-        if (!isFileOpen)
-        {
+    private static void saveFile(String fileName) {
+        if (!isFileOpen) {
             System.out.println("No file is currently open.");
             return;
         }

@@ -2,6 +2,7 @@ import guest.Guest;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
+import javax.xml.bind.JAXBContext;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -11,36 +12,21 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class XMLParser
-{
-    //region Members of the class
+public class XMLParser {
     private final static String XML_GUESTS_FILE_PATHWAY = String.valueOf(Paths.get("guests.xml"));
     private final static String XML_ROOMS_FILE_PATHWAY = String.valueOf(Paths.get("rooms.xml"));
-    //endregion
 
-    //region Constructor of the class
-    //endregion
-
-    //region Methods of the class
-    public void writeXML()
-    {
-
-    }
-
-    public void defaultSettings(File file) throws IOException
-    {
+    public void defaultSettings(File file) throws IOException {
         FileWriter fileWriter = new FileWriter(file);
         fileWriter.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
         fileWriter.close();
     }
 
-    public List<Guest> readXML() throws ParserConfigurationException, IOException, SAXException
-    {
+    public List<Guest> readXML() throws ParserConfigurationException, IOException, SAXException {
         List<Guest> guestList = new ArrayList<>();
         File filePathway = new File(XML_GUESTS_FILE_PATHWAY);
 
-        if (!filePathway.exists())
-        {
+        if (!filePathway.exists()) {
             System.err.println("File not found: " + filePathway.getAbsolutePath());
             throw new FileNotFoundException();
         }
@@ -55,10 +41,8 @@ public class XMLParser
 
         NodeList nodeList = root.getElementsByTagName("guest");
 
-        for (int i = 0; i < nodeList.getLength(); i++)
-        {
-            if (nodeList.item(i).getNodeType() == Node.ELEMENT_NODE)
-            {
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            if (nodeList.item(i).getNodeType() == Node.ELEMENT_NODE) {
                 Element guest = (Element) nodeList.item(i);
 
                 long id = Long.parseLong(guest.getAttribute("id"));
@@ -77,55 +61,4 @@ public class XMLParser
         }
         return guestList;
     }
-
-    public List<Guest> sysOutXMl() throws ParserConfigurationException, IOException, SAXException // da priema kato parametur guest i da moje da go dobavi kym xml-a
-    {
-        List<Guest> guestList = new ArrayList<>();
-        File filePathway = new File(XML_GUESTS_FILE_PATHWAY);
-
-        if (!filePathway.exists())
-        {
-            System.err.println("File not found: " + filePathway.getAbsolutePath());
-            System.err.println("Will be created upon next start.");
-            throw new FileNotFoundException();
-        }
-
-        DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-        Document document = documentBuilder.parse(filePathway);
-
-        document.getDocumentElement().normalize();
-
-        Element root = document.getDocumentElement();
-
-        NodeList nodeList = root.getElementsByTagName("guest");
-
-        for (int temp = 0; temp < nodeList.getLength(); temp++) {
-            Node nNode = nodeList.item(temp);
-
-            if (nNode.getNodeType() == Node.ELEMENT_NODE)
-            {
-                Element eElement = (Element) nNode;
-                System.out.println("id : " + eElement.getAttribute("id"));
-                System.out.println("firstName : " + eElement.getElementsByTagName("firstName").item(0).getTextContent());
-                System.out.println("secondName : " + eElement.getElementsByTagName("secondName").item(0).getTextContent());
-                System.out.println("lastName : " + eElement.getElementsByTagName("lastName").item(0).getTextContent());
-                System.out.println("uniqueIdentificationNumber : " + eElement.getElementsByTagName("uniqueIdentificationNumber").item(0).getTextContent());
-                System.out.println("phoneNumber : " + eElement.getElementsByTagName("phoneNumber").item(0).getTextContent());
-            }
-        }
-        return guestList;
-    }
-
-    public void writeToXML(Guest guest) throws ParserConfigurationException, IOException, SAXException, TransformerException // da priema kato parametur guest i da moje da go dobavi kym xml-a
-    {
-        
-    }
-    //endregion
-
-    //region Overrides
-    //endregion
-
-    //region Accessors and Mutators of the class
-    //endregion
 }

@@ -1,8 +1,6 @@
 package guest;
 
-public class Guest
-{
-    //region Members of the class
+public class Guest {
     private final long id;
     private static long guestCounter;
     private String firstName;
@@ -10,11 +8,8 @@ public class Guest
     private String lastName;
     private String uniqueIdentificationNumber; // ЕГН
     private String phoneNumber;
-    //endregion
 
-    //region Builder of the class
-    public static class Builder
-    {
+    public static class Builder {
         private long id;
         private static long guestCounter;
         private final String firstName;
@@ -23,8 +18,7 @@ public class Guest
         private final String uniqueIdentificationNumber; // ЕГН
         private final String phoneNumber;
 
-        public Builder(String firstName, String secondName, String lastName, String uniqueIdentificationNumber, String phoneNumber)
-        {
+        public Builder(String firstName, String secondName, String lastName, String uniqueIdentificationNumber, String phoneNumber) {
             this.firstName = firstName;
             this.secondName = secondName;
             this.lastName = lastName;
@@ -34,21 +28,17 @@ public class Guest
             this.id = guestCounter;
         }
 
-        public Builder withID(long id)
-        {
+        public Builder withID(long id) {
             this.id = id;
             return this;
         }
-        public Guest build()
-        {
+
+        public Guest build() {
             return new Guest(firstName,secondName,lastName,uniqueIdentificationNumber,phoneNumber);
         }
     }
-    //endregion
 
-    //region Constructor of the class
-    private Guest(String firstName, String secondName, String lastName, String uniqueIdentificationNumber, String phoneNumber)
-    {
+    private Guest(String firstName, String secondName, String lastName, String uniqueIdentificationNumber, String phoneNumber) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.lastName = lastName;
@@ -57,15 +47,9 @@ public class Guest
         guestCounter++;
         this.id = guestCounter;
     }
-    //endregion
 
-    //region Methods of the class
-    //endregion
-
-    //region Overrides
     @Override
-    public String toString()
-    {
+    public String toString() {
        StringBuilder stringBuilder = new StringBuilder();
 
        stringBuilder.append("ID: ")                         .append(this.id)                             .append("\n");
@@ -77,53 +61,39 @@ public class Guest
 
        return String.valueOf(stringBuilder);
     }
-    //endregion
 
-    //region Accessors and Mutators of the class
-    public String getFirstName()
-    {
+    public String getFirstName() {
         return firstName;
     }
-    public String getSecondName()
-    {
+    public String getSecondName() {
         return secondName;
     }
-    public String getLastName()
-    {
+    public String getLastName() {
         return lastName;
     }
-    public String getUniqueIdentificationNumber()
-    {
+    public String getUniqueIdentificationNumber() {
         return uniqueIdentificationNumber;
     }
-    public String getPhoneNumber()
-    {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
-    public long getId()
-    {
+    public long getId() {
         return id;
     }
 
-    public void setFirstName(String firstName)
-    {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public void setSecondName(String secondName)
-    {
+    public void setSecondName(String secondName) {
         this.secondName = secondName;
     }
-    public void setLastName(String lastName)
-    {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    public void setUniqueIdentificationNumber(String uniqueIdentificationNumber)
-    {
+    public void setUniqueIdentificationNumber(String uniqueIdentificationNumber) {
         this.uniqueIdentificationNumber = uniqueIdentificationNumber;
     }
-    public void setPhoneNumber(String phoneNumber)
-    {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    //endregion
 }

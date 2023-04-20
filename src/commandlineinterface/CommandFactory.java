@@ -2,26 +2,15 @@ package commandlineinterface;
 
 import exceptions.InvalidCommandException;
 
-public class CommandFactory
-{
-    //region Members of the class.
-    //endregion
-
-    //region Constructor of the class.
-    //endregion
-
-    //region Methods of the class.
-    public Command createCommand(Commands command) throws InvalidCommandException
-    {
+public class CommandFactory {
+    public Command createCommand(Commands command) throws InvalidCommandException {
         Command commandObject;
 
-        if(command == null)
-        {
+        if(command == null) {
             throw new InvalidCommandException("Please enter a valid command!", new RuntimeException());
         }
 
-        switch (command)
-        {
+        switch (command) {
             case OPEN:
                 commandObject = Open.getInstance();
                 break;
@@ -46,11 +35,4 @@ public class CommandFactory
 
         return commandObject;
     }
-    //endregion
-
-    //region Overrides.
-    //endregion
-
-    //region Accessors and Mutators of the class.
-    //endregion
 }

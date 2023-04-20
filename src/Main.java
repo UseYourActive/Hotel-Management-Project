@@ -1,15 +1,10 @@
 import guest.Guest;
-import org.xml.sax.SAXException;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.TransformerException;
-import java.io.IOException;
+import java.time.LocalDate;
 import java.util.Scanner;
 
-public class Main
-{
-    public static void main(String[] args)
-    {
+public class Main {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
 //        String firstName = scanner.nextLine();
@@ -20,15 +15,7 @@ public class Main
 
         Guest guest = new Guest.Builder("Test1","Test1","Test1","Test1","Test1").build();
         XMLParser xmlParser = new XMLParser();
-        try
-        {
-            System.out.println(xmlParser.readXML());
-            xmlParser.writeToXML(guest);
-        }
-        catch (ParserConfigurationException | IOException | SAXException | TransformerException e)
-        {
-            throw new RuntimeException(e);
-        }
+
     }
 }
 // ideq: da si napravq klasa guest s factory i da ima razlichen tip guests - pensioneer, child, businessman and more. A room da bude s builder?
@@ -37,6 +24,7 @@ public class Main
 //    public static void main(String[] args) {
 //        Application.execute();
 //
+//        LocalDate data = LocalDate.parse(scanner.nextLine()); // Storevame ot string v localdate
 //        Scanner scanner = new Scanner(System.in); // get user input
 //
 //        LocalDate today = LocalDate.now(); // shows the day today

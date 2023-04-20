@@ -1,6 +1,5 @@
 package errorlogger;
 
-public interface ErrorWritable
-{
+public interface ErrorWritable {
     void writeToErrorLog(Exception e);
 }
