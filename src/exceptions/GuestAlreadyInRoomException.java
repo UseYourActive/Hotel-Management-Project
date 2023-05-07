@@ -1,12 +1,12 @@
 package exceptions;
 
 public class GuestAlreadyInRoomException extends Exception {
-    GuestAlreadyInRoomException(){}
+    public GuestAlreadyInRoomException(){}
 
-    GuestAlreadyInRoomException(String message) {
+    public GuestAlreadyInRoomException(String message) {
         super(message);
     }
-    GuestAlreadyInRoomException(Throwable cause) {
+    public GuestAlreadyInRoomException(Throwable cause) {
         super(cause);
     }
 

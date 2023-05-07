@@ -1,12 +1,12 @@
 package exceptions;
 
 public class InvalidCommandException extends Exception {
-    InvalidCommandException(){}
+    public InvalidCommandException(){}
 
     public InvalidCommandException(String message) {
         super(message);
     }
-    InvalidCommandException(Throwable cause) {
+    public InvalidCommandException(Throwable cause) {
         super(cause);
     }
 
