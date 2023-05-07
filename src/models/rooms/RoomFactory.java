@@ -1,4 +1,4 @@
-package rooms;
+package models.rooms;
 
 import exceptions.InvalidRoomTypeException;
 

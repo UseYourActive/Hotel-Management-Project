@@ -1,4 +1,4 @@
-package rooms;
+package models.rooms;
 
 public enum RoomTypes {
     SINGLE_ROOM("Single room"),
@@ -14,6 +14,6 @@ public enum RoomTypes {
 
     @Override
     public String toString() {
-        return roomType;
+        return this.roomType;
     }
 }
