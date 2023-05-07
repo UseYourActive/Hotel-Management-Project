@@ -1,7 +1,10 @@
 import commandlineinterface.*;
 import errorlogger.ErrorLogWriter;
 import errorlogger.ErrorWritable;
+import xmlparsers.JAXBParser;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class TestvamCLI {
@@ -10,13 +13,17 @@ public class TestvamCLI {
 
     public static void main(String[] args) {
         ErrorWritable errorLogWriter = new ErrorLogWriter();
+        JAXBParser jaxbParser = new JAXBParser();
+        List<String> neshto = new ArrayList<>();
 
-        Command save = Save.getInstance();
-        Command open = Open.getInstance();
-        Command close = Close.getInstance();
-        Help help = Help.getInstance();
-        Command exit = Exit.getInstance();
-        Command saveAs = SaveAs.getInstance();
+        CommandFactory commandFactory = new CommandFactory(jaxbParser, errorLogWriter);
+
+        Command save = Save.getInstance(jaxbParser,errorLogWriter);
+        Command open = Open.getInstance(jaxbParser, errorLogWriter,neshto);
+        Command close = Close.getInstance(jaxbParser);
+        Command help = Help.getInstance();
+        Command exit = Exit.getInstance(jaxbParser);
+        Command saveAs = SaveAs.getInstance(jaxbParser,errorLogWriter,neshto);
 
         //CommandService commandService = new CommandService(open, close, save, saveAs, help, exit);
 
