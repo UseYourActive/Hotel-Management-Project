@@ -7,6 +7,7 @@ import java.util.*;
 import exceptions.NoRoomFoundException;
 import exceptions.NotAValidBookingDateRangeException;
 import exceptions.ReservationAlreadyExistsException;
+import exceptions.UnavailableRoomException;
 import models.reservation.Reservation;
 import models.rooms.Room;
 import xmlparsers.JAXBParser;
@@ -112,7 +113,7 @@ public class HotelService {
 //        Извежда се списък, в който за всяка стая, използвана в дадения период, се извежда и броя на дните, в които е била използвана.
     }
 
-    public List<Room> find() throws Exception {
+    public List<Room> find(){
         int numberOfBeds = Integer.parseInt(arguments.get(0));
         LocalDate from = LocalDate.parse(arguments.get(1));
         LocalDate to = LocalDate.parse(arguments.get(2));
@@ -138,7 +139,7 @@ public class HotelService {
 //        При наличие на повече свободни стаи се предпочитат такива с по-малко на брой легла.
     }
 
-    public void findImportant() throws Exception {
+    public void findImportant() throws NoRoomFoundException {
         if(!(find().isEmpty())){
             return;
         }
@@ -153,6 +154,10 @@ public class HotelService {
             if(room.getNumberOfBeds() >= numberOfBeds){
                 roomList.add(room);
             }
+        }
+
+        if(roomList.isEmpty()){
+            throw new NoRoomFoundException("There has not been an available room found!");
         }
 
         for(Room fromRoom : roomList){
@@ -174,7 +179,7 @@ public class HotelService {
 //        Алгоритъмът да предлага разместване на настанените от най-много две стаи.
     }
 
-    public void unavailable() throws Exception {
+    public void unavailable() throws UnavailableRoomException, NotAValidBookingDateRangeException, ReservationAlreadyExistsException {
         long id = Long.parseLong(arguments.get(0));
         LocalDate from = LocalDate.parse(arguments.get(1));
         LocalDate to = LocalDate.parse(arguments.get(2));
@@ -183,7 +188,7 @@ public class HotelService {
         for(Room room : Hotel.getHotelRooms()){
             if(room.getNumber() == id){
                 if(!room.addReservation(new Reservation(from, to, note, 0))){
-                    throw new Exception("There is already a restriction to this room");
+                    throw new UnavailableRoomException("There is already a restriction to this room");
                 }
                 break;
             }
