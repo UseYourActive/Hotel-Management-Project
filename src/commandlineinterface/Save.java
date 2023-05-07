@@ -1,27 +1,38 @@
 package commandlineinterface;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import errorlogger.ErrorLogWriter;
+import errorlogger.ErrorWritable;
+import xmlparsers.JAXBParser;
+
+import javax.xml.bind.JAXBException;
+import java.util.ArrayList;
 
 public class Save implements Command {
+    private JAXBParser jaxbParser;
+    private ErrorWritable errorLogger;
     private static Save instance;
 
-    private Save(){}
+    private Save(JAXBParser jaxbParser, ErrorWritable errorLogger){
+        this.jaxbParser = jaxbParser;
+        this.errorLogger = errorLogger;
+    }
 
-    public static Save getInstance() {
+    public static Save getInstance(JAXBParser jaxbParser, ErrorWritable errorLogger) {
         if(instance == null) {
-            instance = new Save();
+            instance = new Save(jaxbParser, errorLogger);
             return instance;
         }
         return instance;
     }
 
-    public void save(File file, String data) throws IOException
-    {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-        bufferedWriter.write(data);
-        bufferedWriter.close();
+    @Override
+    public void execute() {
+        try{
+            jaxbParser.writeToFile();
+        }catch(JAXBException e){
+            errorLogger.writeToErrorLog(e);
+        }
+
+        System.out.println("File successfully saved at: "+ jaxbParser.getFile().getAbsolutePath());
     }
 }

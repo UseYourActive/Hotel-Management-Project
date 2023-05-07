@@ -1,34 +1,47 @@
 package commandlineinterface;
 
-import java.io.BufferedWriter;
+import errorlogger.ErrorWritable;
+import xmlparsers.JAXBParser;
+
+import javax.xml.bind.JAXBException;
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.util.List;
 
 public class SaveAs implements Command {
+    private JAXBParser jaxbParser;
+    private ErrorWritable errorLogger;
+    private List<String> arguments;
     private static SaveAs instance;
 
-    private SaveAs(){}
+    private SaveAs(JAXBParser jaxbParser, ErrorWritable errorLogger, List<String> arguments){
+        this.jaxbParser = jaxbParser;
+        this.errorLogger = errorLogger;
+        this.arguments = arguments;
+    }
 
-    public static SaveAs getInstance() {
+    public static SaveAs getInstance(JAXBParser jaxbParser, ErrorWritable errorLogger, List<String> arguments) {
         if(instance == null) {
-            instance = new SaveAs();
+            instance = new SaveAs(jaxbParser, errorLogger, arguments);
             return instance;
         }
         return instance;
     }
 
-    public void saveAs(String fileData, String data) throws IOException {
-        File file = new File(fileData);
 
-        if(!file.exists()) {
-            file.createNewFile();
+    @Override
+    public void execute() {
+        String pathway = arguments.get(0);
+
+        String currentFile= jaxbParser.getFile().getAbsolutePath();
+        jaxbParser.setFile(new File(pathway));
+
+        try{
+            jaxbParser.writeToFile();
+            jaxbParser.deleteFile(currentFile);
+        } catch (JAXBException e) {
+            errorLogger.writeToErrorLog(e);
         }
 
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-
-        bufferedWriter.write(data);
-
-        bufferedWriter.close();
+        System.out.println("Successfully saved file as: " + jaxbParser.getFile().getAbsolutePath());
     }
 }

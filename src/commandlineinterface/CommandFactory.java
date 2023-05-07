@@ -1,9 +1,21 @@
 package commandlineinterface;
 
+import errorlogger.ErrorWritable;
 import exceptions.InvalidCommandException;
+import xmlparsers.JAXBParser;
+
+import java.util.List;
 
 public class CommandFactory {
-    public Command createCommand(Commands command) throws InvalidCommandException {
+    private JAXBParser jaxbParser;
+    private ErrorWritable errorLogger;
+
+    public CommandFactory(JAXBParser jaxbParser, ErrorWritable errorLogger) {
+        this.jaxbParser = jaxbParser;
+        this.errorLogger = errorLogger;
+    }
+
+    public Command createCommand(DefaultCommands command, List<String> arguments) throws InvalidCommandException {
         Command commandObject;
 
         if(command == null) {
@@ -12,22 +24,22 @@ public class CommandFactory {
 
         switch (command) {
             case OPEN:
-                commandObject = Open.getInstance();
+                commandObject = Open.getInstance(this.jaxbParser, this.errorLogger, arguments);
                 break;
             case CLOSE:
-                commandObject = Close.getInstance();
+                commandObject = Close.getInstance(this.jaxbParser);
                 break;
             case SAVE:
-                commandObject = Save.getInstance();
+                commandObject = Save.getInstance(this.jaxbParser, this.errorLogger);
                 break;
             case SAVE_AS:
-                commandObject = SaveAs.getInstance();
+                commandObject = SaveAs.getInstance(this.jaxbParser, this.errorLogger, arguments);
                 break;
             case HELP:
                 commandObject = Help.getInstance();
                 break;
             case EXIT:
-                commandObject = Exit.getInstance();
+                commandObject = Exit.getInstance(this.jaxbParser);
                 break;
             default:
                 throw new InvalidCommandException("Please enter a valid command!");

@@ -1,6 +1,6 @@
 package commandlineinterface;
 
-public enum Commands {
+public enum DefaultCommands {
     OPEN("Open"),
     CLOSE("Close"),
     SAVE("Save"),
@@ -10,7 +10,7 @@ public enum Commands {
 
     private final String command;
 
-    Commands(String roomType) {
+    DefaultCommands(String roomType) {
         this.command = roomType;
     }
 
