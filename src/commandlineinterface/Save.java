@@ -5,7 +5,6 @@ import errorlogger.ErrorWritable;
 import xmlparsers.JAXBParser;
 
 import javax.xml.bind.JAXBException;
-import java.util.ArrayList;
 
 public class Save implements Command {
     private JAXBParser jaxbParser;
