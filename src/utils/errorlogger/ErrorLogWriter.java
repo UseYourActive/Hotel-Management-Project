@@ -1,16 +1,15 @@
-package errorlogger;
+package utils.errorlogger;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.nio.file.Paths;
 
-public class ErrorLogWriter implements ErrorWritable {
+public class ErrorLogWriter {
     private final static String ERROR_LOG_PATH = String.valueOf(Paths.get("ErrorLog.txt"));
 
     public ErrorLogWriter(){}
 
-    @Override
     public final void writeToErrorLog(Exception e) {
         try {
             FileWriter newFile = new FileWriter(ERROR_LOG_PATH, true);
