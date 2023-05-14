@@ -1,28 +1,30 @@
 package commandlineinterface;
 
-import xmlparsers.JAXBParser;
+import commandlineinterface.contractors.DefaultCommand;
+import utils.services.HotelService;
 
-public class Exit implements Command {
-    private JAXBParser jaxbParser;
+public class Exit implements DefaultCommand {
+    private HotelService hotelService;
     private static Exit instance;
 
-    private Exit(JAXBParser jaxbParser){
-        this.jaxbParser = jaxbParser;
+    private Exit(HotelService hotelService){
+        this.hotelService = hotelService;
     }
 
-    public static Exit getInstance(JAXBParser jaxbParser) {
+    public static Exit getInstance(HotelService hotelService) {
         if(instance == null) {
-            instance = new Exit(jaxbParser);
+            instance = new Exit(hotelService);
             return instance;
         }
         return instance;
     }
 
     public void execute(){
-        jaxbParser.setHotel(null);
-        jaxbParser.setFile(null);
-        jaxbParser = null;
+        hotelService.setRepository(null);
+        hotelService.setFile(null);
+        hotelService = null;
         System.out.println("Exiting program...");
+        System.gc();
         System.exit(0);
     }
 }

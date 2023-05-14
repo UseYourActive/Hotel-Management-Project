@@ -1,27 +1,27 @@
 package commandlineinterface;
 
-import errorlogger.ErrorWritable;
-import xmlparsers.JAXBParser;
+import commandlineinterface.contractors.DefaultCommand;
+import utils.errorlogger.ErrorLogWriter;
+import utils.services.HotelService;
 
-import javax.xml.bind.JAXBException;
 import java.io.File;
 import java.util.List;
 
-public class SaveAs implements Command {
-    private JAXBParser jaxbParser;
-    private ErrorWritable errorLogger;
-    private List<String> arguments;
+public class SaveAs implements DefaultCommand {
+    private HotelService hotelService;
+    private ErrorLogWriter errorLogger;
     private static SaveAs instance;
+    private String pathway;
 
-    private SaveAs(JAXBParser jaxbParser, ErrorWritable errorLogger, List<String> arguments){
-        this.jaxbParser = jaxbParser;
+    private SaveAs(HotelService hotelService, ErrorLogWriter errorLogger, List<String> arguments){
+        this.hotelService = hotelService;
         this.errorLogger = errorLogger;
-        this.arguments = arguments;
+        this.pathway = arguments.get(0);
     }
 
-    public static SaveAs getInstance(JAXBParser jaxbParser, ErrorWritable errorLogger, List<String> arguments) {
+    public static SaveAs getInstance(HotelService hotelService, ErrorLogWriter errorLogger, List<String> arguments) {
         if(instance == null) {
-            instance = new SaveAs(jaxbParser, errorLogger, arguments);
+            instance = new SaveAs(hotelService, errorLogger, arguments);
             return instance;
         }
         return instance;
@@ -30,18 +30,16 @@ public class SaveAs implements Command {
 
     @Override
     public void execute() {
-        String pathway = arguments.get(0);
-
-        String currentFile= jaxbParser.getFile().getAbsolutePath();
-        jaxbParser.setFile(new File(pathway));
+        String currentFile = hotelService.getFile().getAbsolutePath();
+        hotelService.setFile(new File(pathway));
 
         try{
-            jaxbParser.writeToFile();
-            jaxbParser.deleteFile(currentFile);
-        } catch (JAXBException e) {
-            errorLogger.writeToErrorLog(e);
+            hotelService.exportToFile();
+            hotelService.deleteFile(currentFile);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
-        System.out.println("Successfully saved file as: " + jaxbParser.getFile().getAbsolutePath());
+        System.out.println("Successfully saved file as: " + hotelService.getFile().getAbsolutePath());
     }
 }

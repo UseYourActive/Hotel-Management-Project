@@ -1,28 +1,28 @@
 package commandlineinterface;
 
-import errorlogger.ErrorWritable;
-import models.hotel.Hotel;
-import xmlparsers.JAXBParser;
+import commandlineinterface.contractors.DefaultCommand;
+import utils.errorlogger.ErrorLogWriter;
+import utils.services.HotelService;
 
 import javax.xml.bind.JAXBException;
 import java.io.File;
 import java.util.List;
 
-public class Open implements Command {
-    private JAXBParser jaxbParser;
-    private List<String> arguments;
+public class Open implements DefaultCommand {
+    private HotelService hotelService;
     private static Open instance;
-    private ErrorWritable errorLogger;
+    private ErrorLogWriter errorLogger;
+    private String pathway;
 
-    private Open(JAXBParser jaxbParser, ErrorWritable errorLogger,List<String> arguments){
-        this.jaxbParser = jaxbParser;
+    private Open(HotelService hotelService, ErrorLogWriter errorLogger, List<String> arguments){
+        this.hotelService = hotelService;
         this.errorLogger = errorLogger;
-        this.arguments = arguments;
+        this.pathway = arguments.get(0);
     }
 
-    public static Open getInstance(JAXBParser jaxbParser, ErrorWritable errorLogger, List<String> arguments) {
+    public static Open getInstance(HotelService hotelService, ErrorLogWriter errorLogger, List<String> arguments) {
         if(instance == null) {
-            instance = new Open(jaxbParser, errorLogger,arguments);
+            instance = new Open(hotelService, errorLogger,arguments);
             return instance;
         }
         return instance;
@@ -30,28 +30,25 @@ public class Open implements Command {
 
     @Override
     public void execute() {
-        String pathway = arguments.get(0);
-
-        jaxbParser.setFile(new File(pathway));
-        jaxbParser.setHotel(Hotel.getInstance());
-
-        if(jaxbParser.getFile().exists()) {
+        hotelService.setFile(new File(pathway));
+        if(hotelService.getFile().exists()){
             try {
-                jaxbParser.readFromFile();
+                hotelService.loadRepository();
             } catch (JAXBException e) {
-                errorLogger.writeToErrorLog(e);
+                e.printStackTrace();
             }
             System.out.println(pathway + " file has been successfully opened!");
-        } else {
-            System.out.println(pathway + " file was not found!");
+        }else {
+            System.out.println("File not found!");
+
+            try {
+                hotelService.createFileIfNotExist();
+            } catch (JAXBException e) {
+                e.printStackTrace();
+            }
+
+            System.out.println("File has been created!");
         }
 
-        try {
-            jaxbParser.createFileIfNotExist(pathway);
-        } catch (JAXBException e) {
-            errorLogger.writeToErrorLog(e);
-        }
-
-        System.out.println("A new file has been created at: " + pathway);
     }
 }

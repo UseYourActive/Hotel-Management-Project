@@ -1,24 +1,24 @@
 package commandlineinterface;
 
-import errorlogger.ErrorLogWriter;
-import errorlogger.ErrorWritable;
-import xmlparsers.JAXBParser;
+import commandlineinterface.contractors.DefaultCommand;
+import utils.errorlogger.ErrorLogWriter;
+import utils.services.HotelService;
 
 import javax.xml.bind.JAXBException;
 
-public class Save implements Command {
-    private JAXBParser jaxbParser;
-    private ErrorWritable errorLogger;
+public class Save implements DefaultCommand {
+    private HotelService hotelService;
+    private ErrorLogWriter errorLogger;
     private static Save instance;
 
-    private Save(JAXBParser jaxbParser, ErrorWritable errorLogger){
-        this.jaxbParser = jaxbParser;
+    private Save(HotelService hotelService, ErrorLogWriter errorLogger){
+        this.hotelService = hotelService;
         this.errorLogger = errorLogger;
     }
 
-    public static Save getInstance(JAXBParser jaxbParser, ErrorWritable errorLogger) {
+    public static Save getInstance(HotelService hotelService, ErrorLogWriter errorLogger) {
         if(instance == null) {
-            instance = new Save(jaxbParser, errorLogger);
+            instance = new Save(hotelService, errorLogger);
             return instance;
         }
         return instance;
@@ -27,11 +27,11 @@ public class Save implements Command {
     @Override
     public void execute() {
         try{
-            jaxbParser.writeToFile();
+            hotelService.exportToFile();
         }catch(JAXBException e){
-            errorLogger.writeToErrorLog(e);
+            e.printStackTrace();
         }
 
-        System.out.println("File successfully saved at: "+ jaxbParser.getFile().getAbsolutePath());
+        System.out.println("File successfully saved at: "+ hotelService.getFile().getAbsolutePath());
     }
 }
