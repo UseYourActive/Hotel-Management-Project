@@ -9,13 +9,13 @@ java.io.FileNotFoundException: C:\Users\Alex Orozov\IdeaProjects\KursovProekt\ne
 	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.xmlparsers.JAXBParser.parse(xmlparsers.JAXBParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.utils.parsers.xml.JAXBParser.parse(utils.parsers.xml.JAXBParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.DOMParser.parse(DOMParser.java:247)
 	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
-	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:206)
-	at xmlparsers.JAXBParser.readXML(xmlparsers.JAXBParser.java:128)
+	at java.xml/javax.xml.utils.parsers.DocumentBuilder.parse(DocumentBuilder.java:206)
+	at utils.parsers.xml.JAXBParser.readXML(utils.parsers.xml.JAXBParser.java:128)
 	at Main.main(Main.java:48)
 java.io.FileNotFoundException: C:\Users\Alex Orozov\IdeaProjects\KursovProekt\neshto.xml (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
@@ -26,13 +26,13 @@ java.io.FileNotFoundException: C:\Users\Alex Orozov\IdeaProjects\KursovProekt\ne
 	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.xmlparsers.JAXBParser.parse(xmlparsers.JAXBParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.utils.parsers.xml.JAXBParser.parse(utils.parsers.xml.JAXBParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.DOMParser.parse(DOMParser.java:247)
 	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
-	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:206)
-	at xmlparsers.JAXBParser.readXML(xmlparsers.JAXBParser.java:128)
+	at java.xml/javax.xml.utils.parsers.DocumentBuilder.parse(DocumentBuilder.java:206)
+	at utils.parsers.xml.JAXBParser.readXML(utils.parsers.xml.JAXBParser.java:128)
 	at Main.main(Main.java:48)
 java.io.FileNotFoundException: C:\Users\Alex Orozov\IdeaProjects\KursovProekt\neshto.xml (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
@@ -43,13 +43,13 @@ java.io.FileNotFoundException: C:\Users\Alex Orozov\IdeaProjects\KursovProekt\ne
 	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.xmlparsers.JAXBParser.parse(xmlparsers.JAXBParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.utils.parsers.xml.JAXBParser.parse(utils.parsers.xml.JAXBParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.DOMParser.parse(DOMParser.java:247)
 	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
-	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:206)
-	at xmlparsers.JAXBParser.readXML(xmlparsers.JAXBParser.java:128)
+	at java.xml/javax.xml.utils.parsers.DocumentBuilder.parse(DocumentBuilder.java:206)
+	at utils.parsers.xml.JAXBParser.readXML(utils.parsers.xml.JAXBParser.java:128)
 	at Main.main(Main.java:48)
 java.io.FileNotFoundException: C:\Users\Alex Orozov\IdeaProjects\KursovProekt\neshto.xml (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
@@ -60,11 +60,2573 @@ java.io.FileNotFoundException: C:\Users\Alex Orozov\IdeaProjects\KursovProekt\ne
 	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.xmlparsers.JAXBParser.parse(xmlparsers.JAXBParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.utils.parsers.xml.JAXBParser.parse(utils.parsers.xml.JAXBParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.DOMParser.parse(DOMParser.java:247)
 	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
-	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:206)
-	at xmlparsers.JAXBParser.readXML(xmlparsers.JAXBParser.java:121)
+	at java.xml/javax.xml.utils.parsers.DocumentBuilder.parse(DocumentBuilder.java:206)
+	at utils.parsers.xml.JAXBParser.readXML(utils.parsers.xml.JAXBParser.java:121)
 	at Main.main(Main.java:49)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+JAXB annotation is placed on a method that is not a JAXB property
+	this problem is related to the following location:
+		at @javax.xml.bind.annotation.XmlElement(name="room", namespace="##default", type=javax.xml.bind.annotation.XmlElement.DEFAULT.class, defaultValue="\u0000", required=false, nillable=false)
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:54)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+JAXB annotation is placed on a method that is not a JAXB property
+	this problem is related to the following location:
+		at @javax.xml.bind.annotation.XmlElement(name="room", namespace="##default", type=javax.xml.bind.annotation.XmlElement.DEFAULT.class, defaultValue="\u0000", required=false, nillable=false)
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:54)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+JAXB annotation is placed on a method that is not a JAXB property
+	this problem is related to the following location:
+		at @javax.xml.bind.annotation.XmlElement(name="room", namespace="##default", type=javax.xml.bind.annotation.XmlElement.DEFAULT.class, defaultValue="\u0000", required=false, nillable=false)
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:54)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+JAXB annotation is placed on a method that is not a JAXB property
+	this problem is related to the following location:
+		at @javax.xml.bind.annotation.XmlElement(name="room", namespace="##default", type=javax.xml.bind.annotation.XmlElement.DEFAULT.class, defaultValue="\u0000", required=false, nillable=false)
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:54)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+JAXB annotation is placed on a method that is not a JAXB property
+	this problem is related to the following location:
+		at @javax.xml.bind.annotation.XmlElement(name="room", namespace="##default", type=javax.xml.bind.annotation.XmlElement.DEFAULT.class, defaultValue="\u0000", required=false, nillable=false)
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:54)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+JAXB annotation is placed on a method that is not a JAXB property
+	this problem is related to the following location:
+		at @javax.xml.bind.annotation.XmlElement(name="room", namespace="##default", type=javax.xml.bind.annotation.XmlElement.DEFAULT.class, defaultValue="\u0000", required=false, nillable=false)
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:54)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 6 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "numberOfBeds"
+	this problem is related to the following location:
+		at public int models.rooms.Room.getNumberOfBeds()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.rooms.Room.numberOfBeds
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "note"
+	this problem is related to the following location:
+		at public java.lang.String models.reservation.Reservation.getNote()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.lang.String models.reservation.Reservation.note
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "numberOfGuests"
+	this problem is related to the following location:
+		at public int models.reservation.Reservation.getNumberOfGuests()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.reservation.Reservation.numberOfGuests
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:54)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 6 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "numberOfBeds"
+	this problem is related to the following location:
+		at public int models.rooms.Room.getNumberOfBeds()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.rooms.Room.numberOfBeds
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "note"
+	this problem is related to the following location:
+		at public java.lang.String models.reservation.Reservation.getNote()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.lang.String models.reservation.Reservation.note
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "numberOfGuests"
+	this problem is related to the following location:
+		at public int models.reservation.Reservation.getNumberOfGuests()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.reservation.Reservation.numberOfGuests
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private static java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:54)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+JAXB annotation is placed on a method that is not a JAXB property
+	this problem is related to the following location:
+		at @javax.xml.bind.annotation.XmlElement(name="room", namespace="##default", type=javax.xml.bind.annotation.XmlElement.DEFAULT.class, defaultValue="\u0000", required=false, nillable=false)
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:54)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+JAXB annotation is placed on a method that is not a JAXB property
+	this problem is related to the following location:
+		at @javax.xml.bind.annotation.XmlElement(name="room", namespace="##default", type=javax.xml.bind.annotation.XmlElement.DEFAULT.class, defaultValue="\u0000", required=false, nillable=false)
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:54)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 7 counts of IllegalAnnotationExceptions
+models.Hotel does not have a no-arg default constructor.
+	this problem is related to the following location:
+		at models.Hotel
+Class has two properties of the same name "numberOfBeds"
+	this problem is related to the following location:
+		at public int models.rooms.Room.getNumberOfBeds()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.rooms.Room.numberOfBeds
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "note"
+	this problem is related to the following location:
+		at public java.lang.String models.reservation.Reservation.getNote()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.lang.String models.reservation.Reservation.note
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "numberOfGuests"
+	this problem is related to the following location:
+		at public int models.reservation.Reservation.getNumberOfGuests()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.reservation.Reservation.numberOfGuests
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 7 counts of IllegalAnnotationExceptions
+models.Hotel does not have a no-arg default constructor.
+	this problem is related to the following location:
+		at models.Hotel
+Class has two properties of the same name "numberOfBeds"
+	this problem is related to the following location:
+		at public int models.rooms.Room.getNumberOfBeds()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.rooms.Room.numberOfBeds
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "note"
+	this problem is related to the following location:
+		at public java.lang.String models.reservation.Reservation.getNote()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.lang.String models.reservation.Reservation.note
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "numberOfGuests"
+	this problem is related to the following location:
+		at public int models.reservation.Reservation.getNumberOfGuests()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.reservation.Reservation.numberOfGuests
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 6 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "numberOfBeds"
+	this problem is related to the following location:
+		at public int models.rooms.Room.getNumberOfBeds()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.rooms.Room.numberOfBeds
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "note"
+	this problem is related to the following location:
+		at public java.lang.String models.reservation.Reservation.getNote()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.lang.String models.reservation.Reservation.note
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "numberOfGuests"
+	this problem is related to the following location:
+		at public int models.reservation.Reservation.getNumberOfGuests()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.reservation.Reservation.numberOfGuests
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 6 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "numberOfBeds"
+	this problem is related to the following location:
+		at public int models.rooms.Room.getNumberOfBeds()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.rooms.Room.numberOfBeds
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "note"
+	this problem is related to the following location:
+		at public java.lang.String models.reservation.Reservation.getNote()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.lang.String models.reservation.Reservation.note
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "numberOfGuests"
+	this problem is related to the following location:
+		at public int models.reservation.Reservation.getNumberOfGuests()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.reservation.Reservation.numberOfGuests
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 5 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "note"
+	this problem is related to the following location:
+		at public java.lang.String models.reservation.Reservation.getNote()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.lang.String models.reservation.Reservation.note
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "numberOfGuests"
+	this problem is related to the following location:
+		at public int models.reservation.Reservation.getNumberOfGuests()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.reservation.Reservation.numberOfGuests
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 5 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "note"
+	this problem is related to the following location:
+		at public java.lang.String models.reservation.Reservation.getNote()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.lang.String models.reservation.Reservation.note
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "numberOfGuests"
+	this problem is related to the following location:
+		at public int models.reservation.Reservation.getNumberOfGuests()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.reservation.Reservation.numberOfGuests
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 4 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "note"
+	this problem is related to the following location:
+		at public java.lang.String models.reservation.Reservation.getNote()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.lang.String models.reservation.Reservation.note
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "numberOfGuests"
+	this problem is related to the following location:
+		at public int models.reservation.Reservation.getNumberOfGuests()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.reservation.Reservation.numberOfGuests
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 4 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "note"
+	this problem is related to the following location:
+		at public java.lang.String models.reservation.Reservation.getNote()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.lang.String models.reservation.Reservation.note
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "numberOfGuests"
+	this problem is related to the following location:
+		at public int models.reservation.Reservation.getNumberOfGuests()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private int models.reservation.Reservation.numberOfGuests
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "endDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.endDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.time.LocalDate models.reservation.Reservation.startDate
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+Class has two properties of the same name "status"
+	this problem is related to the following location:
+		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
+		at models.reservation.Reservation
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 2 counts of IllegalAnnotationExceptions
+util.adapters.errorlogger.ErrorWritable is an interface, and JAXB can't handle interfaces.
+	this problem is related to the following location:
+		at util.adapters.errorlogger.ErrorWritable
+		at private util.adapters.errorlogger.ErrorWritable models.Hotel.errorLogger
+		at models.Hotel
+models.rooms.contractors.FactoryRoomCreational is an interface, and JAXB can't handle interfaces.
+	this problem is related to the following location:
+		at models.rooms.contractors.FactoryRoomCreational
+		at private models.rooms.contractors.FactoryRoomCreational models.Hotel.factory
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:48)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 2 counts of IllegalAnnotationExceptions
+util.adapters.errorlogger.ErrorWritable is an interface, and JAXB can't handle interfaces.
+	this problem is related to the following location:
+		at util.adapters.errorlogger.ErrorWritable
+		at private util.adapters.errorlogger.ErrorWritable models.Hotel.errorLogger
+		at models.Hotel
+models.rooms.contractors.FactoryRoomCreational is an interface, and JAXB can't handle interfaces.
+	this problem is related to the following location:
+		at models.rooms.contractors.FactoryRoomCreational
+		at private models.rooms.contractors.FactoryRoomCreational models.Hotel.factory
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:48)
+javax.xml.bind.UnmarshalException: Unable to create an instance of models.rooms.Room
+ - with linked exception:
+[java.lang.InstantiationException]
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.handleEvent(UnmarshallingContext.java:744)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.Loader.reportError(Loader.java:262)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:708)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:188)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:577)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:556)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector.startElement(SAXConnector.java:168)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:258)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:229)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:170)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:209)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:194)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:47)
+Caused by: java.lang.InstantiationException
+	at java.base/jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at com.sun.xml.bind.v2.ClassFactory.create0(ClassFactory.java:132)
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.createInstance(ClassBeanInfoImpl.java:285)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:702)
+	... 23 more
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "hotelRooms"
+	this problem is related to the following location:
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "number"
+	this problem is related to the following location:
+		at public long models.rooms.Room.getNumber()
+		at models.rooms.Room
+		at private java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private final long models.rooms.Room.number
+		at models.rooms.Room
+		at private java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at private java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:47)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "hotelRooms"
+	this problem is related to the following location:
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "number"
+	this problem is related to the following location:
+		at public long models.rooms.Room.getNumber()
+		at models.rooms.Room
+		at private java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private final long models.rooms.Room.number
+		at models.rooms.Room
+		at private java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at private java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at private java.util.List models.Hotel.hotelRooms
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:47)
+javax.xml.bind.UnmarshalException: Unable to create an instance of models.rooms.Room
+ - with linked exception:
+[java.lang.InstantiationException]
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.handleEvent(UnmarshallingContext.java:744)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.Loader.reportError(Loader.java:262)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:708)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:188)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:577)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:556)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector.startElement(SAXConnector.java:168)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:258)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:229)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:170)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:209)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:194)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:47)
+Caused by: java.lang.InstantiationException
+	at java.base/jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at com.sun.xml.bind.v2.ClassFactory.create0(ClassFactory.java:132)
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.createInstance(ClassBeanInfoImpl.java:285)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:702)
+	... 23 more
+javax.xml.bind.UnmarshalException: Unable to create an instance of models.rooms.Room
+ - with linked exception:
+[java.lang.InstantiationException]
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.handleEvent(UnmarshallingContext.java:744)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.Loader.reportError(Loader.java:262)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:708)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:188)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:577)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:556)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector.startElement(SAXConnector.java:168)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:258)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:229)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:170)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:209)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:194)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:43)
+Caused by: java.lang.InstantiationException
+	at java.base/jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at com.sun.xml.bind.v2.ClassFactory.create0(ClassFactory.java:132)
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.createInstance(ClassBeanInfoImpl.java:285)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:702)
+	... 23 more
+javax.xml.bind.UnmarshalException: Unable to create an instance of models.rooms.Room
+ - with linked exception:
+[java.lang.InstantiationException]
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.handleEvent(UnmarshallingContext.java:744)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.Loader.reportError(Loader.java:262)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:708)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:188)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:577)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:556)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector.startElement(SAXConnector.java:168)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.utils.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:258)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:229)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:170)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:209)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:194)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:43)
+Caused by: java.lang.InstantiationException
+	at java.base/jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at com.sun.xml.bind.v2.ClassFactory.create0(ClassFactory.java:132)
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.createInstance(ClassBeanInfoImpl.java:285)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.createInstance(UnmarshallingContext.java:702)
+	... 23 more
+javax.xml.bind.PropertyException: name: jaxb.formatted.output value: true
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.setProperty(AbstractUnmarshallerImpl.java:357)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.setProperty(UnmarshallerImpl.java:514)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:43)
+javax.xml.bind.PropertyException: name: jaxb.formatted.output value: true
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.setProperty(AbstractUnmarshallerImpl.java:357)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.setProperty(UnmarshallerImpl.java:514)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
+	at commandlineinterface.Open.execute(Open.java:40)
+	at Main.main(Main.java:43)
+com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "reservations"
+	this problem is related to the following location:
+		at public java.util.Set models.rooms.Room.getReservations()
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+	this problem is related to the following location:
+		at private java.util.Set models.rooms.Room.reservations
+		at models.rooms.Room
+		at public java.util.List models.Hotel.getHotelRooms()
+		at models.Hotel
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:471)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:303)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:288)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:277)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:400)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
+	at commandlineinterface.Open.execute(Open.java:50)
+	at Main.main(Main.java:43)
