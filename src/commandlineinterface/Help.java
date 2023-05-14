@@ -1,6 +1,8 @@
 package commandlineinterface;
 
-public class Help implements Command {
+import commandlineinterface.contractors.DefaultCommand;
+
+public class Help implements DefaultCommand {
     private static Help instance;
 
     private Help(){}

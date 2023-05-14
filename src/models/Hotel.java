@@ -1,32 +1,42 @@
-package models.hotel;
+package models;
 
 import models.rooms.*;
-import errorlogger.ErrorLogWriter;
-import errorlogger.ErrorWritable;
-import exceptions.InvalidRoomTypeException;
+import models.rooms.enums.RoomTypes;
+import models.rooms.factories.RoomFactory;
+import utils.errorlogger.ErrorLogWriter;
+import exceptions.rooms.InvalidRoomTypeException;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.util.*;
 
-@XmlRootElement
+@XmlRootElement(name = "hotel")
 public class Hotel {
-    private static List<Room> hotelRooms;
+    @XmlTransient
+    private List<Room> hotelRooms;
+    @XmlTransient
     private static Hotel instance;
+    @XmlTransient
     private static String hotelName;
-    private static ErrorWritable errorLogger;
-    private static FactoryRoomCreational factory;
+    @XmlTransient
+    private ErrorLogWriter errorLogger;
+    @XmlTransient
+    private RoomFactory factory;
 
-    private Hotel() {}
+    private Hotel() {
+        this.hotelRooms = new ArrayList<>();
+    }
 
-    public static Hotel getInstance() {
+    private Hotel(ErrorLogWriter errorLogger) {
+        this.errorLogger = errorLogger;
+        this.factory = new RoomFactory();
+        this.hotelRooms = new ArrayList<>();
+        initialize();
+    }
+
+    public static Hotel getInstance(ErrorLogWriter errorLogger) {
         if(instance == null) {
-            instance = new Hotel();
-            hotelRooms = new ArrayList<>();
+            instance = new Hotel(errorLogger);
             hotelName = "Orozov's Brothel";
-            errorLogger = new ErrorLogWriter();
-            factory = new RoomFactory();
-            Hotel.initialize();
         }
         return instance;
     }
@@ -41,7 +51,7 @@ public class Hotel {
         return String.valueOf(allRooms);
     }
 
-    private static void initialize() {
+    private void initialize() {
         int NUMBER_OF_HOTEL_ROOM_INITIALIZATIONS = 5;
         int ROOM_INCREMENT = 1;
 
@@ -52,7 +62,7 @@ public class Hotel {
                 hotelRooms.add(factory.createRoom(RoomTypes.DELUXE_ROOM));
                 hotelRooms.add(factory.createRoom(RoomTypes.PRESIDENT_ROOM));
             } catch (InvalidRoomTypeException e) {
-                errorLogger.writeToErrorLog(e);
+                e.printStackTrace();
             }
         }
     }
@@ -69,9 +79,12 @@ public class Hotel {
 
         return String.valueOf(stringBuilder);
     }
-
     @XmlElement(name = "room")
-    public static List<Room> getHotelRooms() {
-        return new ArrayList<>(hotelRooms);
+    public List<Room> getHotelRooms() {
+        return this.hotelRooms;
+    }
+
+    public void setHotelRooms(List<Room> hotelRooms) {
+        this.hotelRooms = hotelRooms;
     }
 }

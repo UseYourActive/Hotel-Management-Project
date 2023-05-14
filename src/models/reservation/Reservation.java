@@ -1,32 +1,35 @@
 package models.reservation;
 
-import adapters.LocalDateAdapter;
-import adapters.ReservationStatusAdapter;
-import exceptions.NotAValidBookingDateRangeException;
+import models.reservation.enums.ReservationStatus;
+import utils.adapters.LocalDateAdapter;
+import utils.adapters.ReservationStatusAdapter;
+import exceptions.reservations.NotAValidReservationDateRangeException;
 
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDate;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Reservation {
-    @XmlElement
     @XmlJavaTypeAdapter(LocalDateAdapter.class)
+    @XmlElement(name = "startDate")
     private LocalDate startDate;
-    @XmlElement
     @XmlJavaTypeAdapter(LocalDateAdapter.class)
+    @XmlElement(name = "endDate")
     private LocalDate endDate;
-    @XmlElement
+    @XmlElement(name = "note")
     private String note;
-    @XmlElement
+    @XmlElement(name = "numberOfGuests")
     private int numberOfGuests;
     @XmlJavaTypeAdapter(ReservationStatusAdapter.class)
+    @XmlAttribute(name = "status")
     private ReservationStatus status;
 
     public Reservation(){}
 
-    public Reservation(LocalDate startDate, LocalDate endDate, String note, int numberOfGuests) throws NotAValidBookingDateRangeException {
+    public Reservation(LocalDate startDate, LocalDate endDate, String note, int numberOfGuests) throws NotAValidReservationDateRangeException {
         if(startDate.isAfter(endDate)){
-            throw new NotAValidBookingDateRangeException("Unavailable booking");
+            throw new NotAValidReservationDateRangeException("models.hotelcommands.Unavailable booking");
         }
         this.startDate = startDate;
         this.endDate = endDate;

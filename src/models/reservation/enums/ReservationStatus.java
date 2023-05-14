@@ -1,6 +1,6 @@
-package models.reservation;
+package models.reservation.enums;
 
-public enum ReservationStatus {
+public enum ReservationStatus{
     CURRENT("Current"),
     PAST("Past"),
     FUTURE("Future");

@@ -1,12 +1,12 @@
-package commandlineinterface;
+package commandlineinterface.enums;
 
 public enum DefaultCommands {
-    OPEN("Open"),
-    CLOSE("Close"),
-    SAVE("Save"),
-    SAVE_AS("Save as"),
-    HELP("Help"),
-    EXIT("Exit");
+    OPEN("open"),
+    CLOSE("close"),
+    SAVE("save"),
+    SAVEAS("saveas"),
+    HELP("help"),
+    EXIT("exit");
 
     private final String command;
 
@@ -16,6 +16,10 @@ public enum DefaultCommands {
 
     @Override
     public String toString() {
+        return command;
+    }
+
+    public String getCommand() {
         return command;
     }
 }
