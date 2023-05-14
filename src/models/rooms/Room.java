@@ -1,23 +1,25 @@
 package models.rooms;
 
-import exceptions.NoRoomFoundException;
-import exceptions.ReservationAlreadyExistsException;
+import exceptions.rooms.NoRoomFoundException;
+import exceptions.reservations.ReservationAlreadyExistsException;
 import models.reservation.Reservation;
-import models.reservation.ReservationStatus;
+import models.reservation.enums.ReservationStatus;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.*;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public abstract class Room implements Comparable<Room>{
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Room implements Comparable<Room>{
+    @XmlTransient
     private static final AtomicInteger _ID = new AtomicInteger(0);
-    @XmlAttribute
+    @XmlAttribute(name = "number")
     private final long number;
-    @XmlElement
+    @XmlElement(name = "numberOfBeds")
     private int numberOfBeds;
+    @XmlTransient
     private Set<Reservation> reservations;
 
     public Room() {
@@ -128,6 +130,6 @@ public abstract class Room implements Comparable<Room>{
 
     @XmlElement(name = "reservation")
     public Set<Reservation> getReservations() {
-        return new HashSet<>(this.reservations);
+        return this.reservations;
     }
 }

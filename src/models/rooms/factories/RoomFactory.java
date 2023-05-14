@@ -1,6 +1,9 @@
-package models.rooms;
+package models.rooms.factories;
 
-import exceptions.InvalidRoomTypeException;
+import exceptions.rooms.InvalidRoomTypeException;
+import models.rooms.*;
+import models.rooms.contractors.FactoryRoomCreational;
+import models.rooms.enums.RoomTypes;
 
 public class RoomFactory implements FactoryRoomCreational {
     @SuppressWarnings("All")
