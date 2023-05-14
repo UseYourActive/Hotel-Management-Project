@@ -1,6 +1,8 @@
-package exceptions;
+package exceptions.reservations;
 
-public class ReservationAlreadyExistsException extends Exception{
+import exceptions.reservations.ReservationException;
+
+public class ReservationAlreadyExistsException extends ReservationException {
     public ReservationAlreadyExistsException(){}
 
     public ReservationAlreadyExistsException(String message) {

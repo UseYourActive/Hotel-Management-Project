@@ -1,6 +1,8 @@
-package exceptions;
+package exceptions.rooms;
 
-public class NoRoomFoundException extends Exception{
+import exceptions.rooms.RoomException;
+
+public class NoRoomFoundException extends RoomException {
     public NoRoomFoundException(){}
 
     public NoRoomFoundException(String message) {

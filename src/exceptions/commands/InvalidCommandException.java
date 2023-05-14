@@ -1,6 +1,6 @@
-package exceptions;
+package exceptions.commands;
 
-public class InvalidCommandException extends Exception {
+public class InvalidCommandException extends CommandException {
     public InvalidCommandException(){}
 
     public InvalidCommandException(String message) {

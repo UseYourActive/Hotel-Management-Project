@@ -1,6 +1,8 @@
-package exceptions;
+package exceptions.rooms;
 
-public class UnavailableRoomException extends Exception{
+import exceptions.rooms.RoomException;
+
+public class UnavailableRoomException extends RoomException {
     public UnavailableRoomException(){}
 
     public UnavailableRoomException(String message) {

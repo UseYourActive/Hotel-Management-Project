@@ -1,6 +1,8 @@
-package exceptions;
+package exceptions.guests;
 
-public class GuestAlreadyInRoomException extends Exception {
+import exceptions.guests.GuestException;
+
+public class GuestAlreadyInRoomException extends GuestException {
     public GuestAlreadyInRoomException(){}
 
     public GuestAlreadyInRoomException(String message) {
