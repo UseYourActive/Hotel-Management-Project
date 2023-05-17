@@ -2,8 +2,8 @@ package models.rooms;
 
 import exceptions.rooms.NoRoomFoundException;
 import exceptions.reservations.ReservationAlreadyExistsException;
-import models.reservation.Reservation;
-import models.reservation.enums.ReservationStatus;
+import models.reservations.Reservation;
+import models.reservations.enums.ReservationStatus;
 
 import javax.xml.bind.annotation.*;
 import java.time.LocalDate;

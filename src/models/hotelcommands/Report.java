@@ -2,7 +2,7 @@ package models.hotelcommands;
 
 import models.Hotel;
 import models.hotelcommands.contracts.HotelCommand;
-import models.reservation.Reservation;
+import models.reservations.Reservation;
 import models.rooms.Room;
 
 import java.time.Duration;

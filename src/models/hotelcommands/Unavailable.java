@@ -5,7 +5,7 @@ import exceptions.reservations.ReservationAlreadyExistsException;
 import exceptions.rooms.UnavailableRoomException;
 import models.Hotel;
 import models.hotelcommands.contracts.HotelCommand;
-import models.reservation.Reservation;
+import models.reservations.Reservation;
 import models.rooms.Room;
 
 import java.time.LocalDate;

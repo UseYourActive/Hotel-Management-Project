@@ -1,6 +1,6 @@
-package models.reservation;
+package models.reservations;
 
-import models.reservation.enums.ReservationStatus;
+import models.reservations.enums.ReservationStatus;
 import utils.adapters.LocalDateAdapter;
 import utils.adapters.ReservationStatusAdapter;
 import exceptions.reservations.NotAValidReservationDateRangeException;

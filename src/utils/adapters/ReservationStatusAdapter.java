@@ -1,6 +1,6 @@
 package utils.adapters;
 
-import models.reservation.enums.ReservationStatus;
+import models.reservations.enums.ReservationStatus;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 

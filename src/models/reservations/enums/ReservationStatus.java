@@ -1,4 +1,4 @@
-package models.reservation.enums;
+package models.reservations.enums;
 
 public enum ReservationStatus{
     CURRENT("Current"),
