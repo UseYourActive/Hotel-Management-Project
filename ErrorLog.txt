@@ -214,75 +214,75 @@ Class has two properties of the same name "numberOfBeds"
 		at models.Hotel
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 Class has two properties of the same name "note"
 	this problem is related to the following location:
-		at public java.lang.String models.reservation.Reservation.getNote()
-		at models.reservation.Reservation
+		at public java.lang.String models.reservations.Reservation.getNote()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.lang.String models.reservation.Reservation.note
-		at models.reservation.Reservation
+		at private java.lang.String models.reservations.Reservation.note
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 Class has two properties of the same name "numberOfGuests"
 	this problem is related to the following location:
-		at public int models.reservation.Reservation.getNumberOfGuests()
-		at models.reservation.Reservation
+		at public int models.reservations.Reservation.getNumberOfGuests()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 	this problem is related to the following location:
-		at private int models.reservation.Reservation.numberOfGuests
-		at models.reservation.Reservation
+		at private int models.reservations.Reservation.numberOfGuests
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
@@ -318,75 +318,75 @@ Class has two properties of the same name "numberOfBeds"
 		at models.Hotel
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 Class has two properties of the same name "note"
 	this problem is related to the following location:
-		at public java.lang.String models.reservation.Reservation.getNote()
-		at models.reservation.Reservation
+		at public java.lang.String models.reservations.Reservation.getNote()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.lang.String models.reservation.Reservation.note
-		at models.reservation.Reservation
+		at private java.lang.String models.reservations.Reservation.note
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 Class has two properties of the same name "numberOfGuests"
 	this problem is related to the following location:
-		at public int models.reservation.Reservation.getNumberOfGuests()
-		at models.reservation.Reservation
+		at public int models.reservations.Reservation.getNumberOfGuests()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 	this problem is related to the following location:
-		at private int models.reservation.Reservation.numberOfGuests
-		at models.reservation.Reservation
+		at private int models.reservations.Reservation.numberOfGuests
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at private static java.util.List models.Hotel.hotelRooms
@@ -469,75 +469,75 @@ Class has two properties of the same name "numberOfBeds"
 		at models.Hotel
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "note"
 	this problem is related to the following location:
-		at public java.lang.String models.reservation.Reservation.getNote()
-		at models.reservation.Reservation
+		at public java.lang.String models.reservations.Reservation.getNote()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.lang.String models.reservation.Reservation.note
-		at models.reservation.Reservation
+		at private java.lang.String models.reservations.Reservation.note
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "numberOfGuests"
 	this problem is related to the following location:
-		at public int models.reservation.Reservation.getNumberOfGuests()
-		at models.reservation.Reservation
+		at public int models.reservations.Reservation.getNumberOfGuests()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private int models.reservation.Reservation.numberOfGuests
-		at models.reservation.Reservation
+		at private int models.reservations.Reservation.numberOfGuests
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -576,75 +576,75 @@ Class has two properties of the same name "numberOfBeds"
 		at models.Hotel
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "note"
 	this problem is related to the following location:
-		at public java.lang.String models.reservation.Reservation.getNote()
-		at models.reservation.Reservation
+		at public java.lang.String models.reservations.Reservation.getNote()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.lang.String models.reservation.Reservation.note
-		at models.reservation.Reservation
+		at private java.lang.String models.reservations.Reservation.note
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "numberOfGuests"
 	this problem is related to the following location:
-		at public int models.reservation.Reservation.getNumberOfGuests()
-		at models.reservation.Reservation
+		at public int models.reservations.Reservation.getNumberOfGuests()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private int models.reservation.Reservation.numberOfGuests
-		at models.reservation.Reservation
+		at private int models.reservations.Reservation.numberOfGuests
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -680,75 +680,75 @@ Class has two properties of the same name "numberOfBeds"
 		at models.Hotel
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "note"
 	this problem is related to the following location:
-		at public java.lang.String models.reservation.Reservation.getNote()
-		at models.reservation.Reservation
+		at public java.lang.String models.reservations.Reservation.getNote()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.lang.String models.reservation.Reservation.note
-		at models.reservation.Reservation
+		at private java.lang.String models.reservations.Reservation.note
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "numberOfGuests"
 	this problem is related to the following location:
-		at public int models.reservation.Reservation.getNumberOfGuests()
-		at models.reservation.Reservation
+		at public int models.reservations.Reservation.getNumberOfGuests()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private int models.reservation.Reservation.numberOfGuests
-		at models.reservation.Reservation
+		at private int models.reservations.Reservation.numberOfGuests
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -784,75 +784,75 @@ Class has two properties of the same name "numberOfBeds"
 		at models.Hotel
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "note"
 	this problem is related to the following location:
-		at public java.lang.String models.reservation.Reservation.getNote()
-		at models.reservation.Reservation
+		at public java.lang.String models.reservations.Reservation.getNote()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.lang.String models.reservation.Reservation.note
-		at models.reservation.Reservation
+		at private java.lang.String models.reservations.Reservation.note
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "numberOfGuests"
 	this problem is related to the following location:
-		at public int models.reservation.Reservation.getNumberOfGuests()
-		at models.reservation.Reservation
+		at public int models.reservations.Reservation.getNumberOfGuests()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private int models.reservation.Reservation.numberOfGuests
-		at models.reservation.Reservation
+		at private int models.reservations.Reservation.numberOfGuests
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -877,75 +877,75 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 5 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "note"
 	this problem is related to the following location:
-		at public java.lang.String models.reservation.Reservation.getNote()
-		at models.reservation.Reservation
+		at public java.lang.String models.reservations.Reservation.getNote()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.lang.String models.reservation.Reservation.note
-		at models.reservation.Reservation
+		at private java.lang.String models.reservations.Reservation.note
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "numberOfGuests"
 	this problem is related to the following location:
-		at public int models.reservation.Reservation.getNumberOfGuests()
-		at models.reservation.Reservation
+		at public int models.reservations.Reservation.getNumberOfGuests()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private int models.reservation.Reservation.numberOfGuests
-		at models.reservation.Reservation
+		at private int models.reservations.Reservation.numberOfGuests
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -970,75 +970,75 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 5 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "note"
 	this problem is related to the following location:
-		at public java.lang.String models.reservation.Reservation.getNote()
-		at models.reservation.Reservation
+		at public java.lang.String models.reservations.Reservation.getNote()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.lang.String models.reservation.Reservation.note
-		at models.reservation.Reservation
+		at private java.lang.String models.reservations.Reservation.note
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "numberOfGuests"
 	this problem is related to the following location:
-		at public int models.reservation.Reservation.getNumberOfGuests()
-		at models.reservation.Reservation
+		at public int models.reservations.Reservation.getNumberOfGuests()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private int models.reservation.Reservation.numberOfGuests
-		at models.reservation.Reservation
+		at private int models.reservations.Reservation.numberOfGuests
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1063,45 +1063,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1126,45 +1126,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1189,45 +1189,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1252,45 +1252,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1315,45 +1315,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1378,45 +1378,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1441,45 +1441,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1504,45 +1504,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1567,60 +1567,60 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 4 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "note"
 	this problem is related to the following location:
-		at public java.lang.String models.reservation.Reservation.getNote()
-		at models.reservation.Reservation
+		at public java.lang.String models.reservations.Reservation.getNote()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.lang.String models.reservation.Reservation.note
-		at models.reservation.Reservation
+		at private java.lang.String models.reservations.Reservation.note
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "numberOfGuests"
 	this problem is related to the following location:
-		at public int models.reservation.Reservation.getNumberOfGuests()
-		at models.reservation.Reservation
+		at public int models.reservations.Reservation.getNumberOfGuests()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private int models.reservation.Reservation.numberOfGuests
-		at models.reservation.Reservation
+		at private int models.reservations.Reservation.numberOfGuests
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1645,60 +1645,60 @@ Class has two properties of the same name "startDate"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 4 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "note"
 	this problem is related to the following location:
-		at public java.lang.String models.reservation.Reservation.getNote()
-		at models.reservation.Reservation
+		at public java.lang.String models.reservations.Reservation.getNote()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.lang.String models.reservation.Reservation.note
-		at models.reservation.Reservation
+		at private java.lang.String models.reservations.Reservation.note
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "numberOfGuests"
 	this problem is related to the following location:
-		at public int models.reservation.Reservation.getNumberOfGuests()
-		at models.reservation.Reservation
+		at public int models.reservations.Reservation.getNumberOfGuests()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private int models.reservation.Reservation.numberOfGuests
-		at models.reservation.Reservation
+		at private int models.reservations.Reservation.numberOfGuests
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1723,45 +1723,45 @@ Class has two properties of the same name "startDate"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1786,45 +1786,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1849,45 +1849,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
@@ -1912,45 +1912,45 @@ Class has two properties of the same name "status"
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getEndDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getEndDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.endDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.endDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "startDate"
 	this problem is related to the following location:
-		at public java.time.LocalDate models.reservation.Reservation.getStartDate()
-		at models.reservation.Reservation
+		at public java.time.LocalDate models.reservations.Reservation.getStartDate()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private java.time.LocalDate models.reservation.Reservation.startDate
-		at models.reservation.Reservation
+		at private java.time.LocalDate models.reservations.Reservation.startDate
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 Class has two properties of the same name "status"
 	this problem is related to the following location:
-		at public models.reservation.enums.ReservationStatus models.reservation.Reservation.getStatus()
-		at models.reservation.Reservation
+		at public models.reservations.enums.ReservationStatus models.reservations.Reservation.getStatus()
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
 		at models.Hotel
 	this problem is related to the following location:
-		at private models.reservation.enums.ReservationStatus models.reservation.Reservation.status
-		at models.reservation.Reservation
+		at private models.reservations.enums.ReservationStatus models.reservations.Reservation.status
+		at models.reservations.Reservation
 		at public java.util.Set models.rooms.Room.getReservations()
 		at models.rooms.Room
 		at public java.util.List models.Hotel.getHotelRooms()
