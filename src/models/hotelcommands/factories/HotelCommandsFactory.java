@@ -1,5 +1,6 @@
-package models.hotelcommands;
+package models.hotelcommands.factories;
 
+import models.hotelcommands.*;
 import models.hotelcommands.contracts.HotelCommand;
 import models.hotelcommands.enums.HotelCommands;
 import utils.errorlogger.ErrorLogWriter;

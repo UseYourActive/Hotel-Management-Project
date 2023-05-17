@@ -3,7 +3,7 @@ import commandlineinterface.enums.DefaultCommands;
 import utils.services.HotelService;
 import models.Hotel;
 import models.hotelcommands.enums.HotelCommands;
-import models.hotelcommands.HotelCommandsFactory;
+import models.hotelcommands.factories.HotelCommandsFactory;
 import utils.errorlogger.ErrorLogWriter;
 import exceptions.commands.InvalidCommandException;
 import utils.parsers.xml.JAXBParser;
