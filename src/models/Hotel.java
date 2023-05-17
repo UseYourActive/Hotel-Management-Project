@@ -36,7 +36,7 @@ public class Hotel {
     public static Hotel getInstance(ErrorLogWriter errorLogger) {
         if(instance == null) {
             instance = new Hotel(errorLogger);
-            hotelName = "Orozov's Brothel";
+            hotelName = "Orozov le grande hotel";
         }
         return instance;
     }
@@ -79,6 +79,7 @@ public class Hotel {
 
         return String.valueOf(stringBuilder);
     }
+
     @XmlElement(name = "room")
     public List<Room> getHotelRooms() {
         return this.hotelRooms;
