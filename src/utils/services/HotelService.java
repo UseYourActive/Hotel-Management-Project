@@ -15,7 +15,7 @@ public class HotelService {
 
     public HotelService() {}
 
-    public HotelService(ErrorLogWriter errorLogWriter, FileParser<Hotel> jaxbParser) {;
+    public HotelService(ErrorLogWriter errorLogWriter, FileParser<Hotel> jaxbParser) {
         this.repository = Hotel.getInstance(errorLogWriter);
         this.jaxbParser = jaxbParser;
     }
