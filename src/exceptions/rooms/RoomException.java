@@ -1,11 +1,15 @@
 package exceptions.rooms;
 
-public class RoomException extends Exception{
-    public RoomException(){}
+import exceptions.HotelException;
+
+public class RoomException extends HotelException {
+    public RoomException() {
+    }
 
     public RoomException(String message) {
         super(message);
     }
+
     public RoomException(Throwable cause) {
         super(cause);
     }

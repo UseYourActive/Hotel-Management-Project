@@ -1,11 +1,14 @@
 package models.reservations;
 
+import exceptions.reservations.NotAValidReservationDateRangeException;
 import models.reservations.enums.ReservationStatus;
 import utils.adapters.LocalDateAdapter;
 import utils.adapters.ReservationStatusAdapter;
-import exceptions.reservations.NotAValidReservationDateRangeException;
 
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDate;
 
@@ -25,11 +28,13 @@ public class Reservation {
     @XmlAttribute(name = "status")
     private ReservationStatus status;
 
-    public Reservation(){}
+    public Reservation() {
+        this.status = ReservationStatus.NONE;
+    }
 
     public Reservation(LocalDate startDate, LocalDate endDate, String note, int numberOfGuests) throws NotAValidReservationDateRangeException {
-        if(startDate.isAfter(endDate)){
-            throw new NotAValidReservationDateRangeException("models.hotelcommands.Unavailable booking");
+        if (startDate.isAfter(endDate)) {
+            throw new NotAValidReservationDateRangeException("Unavailable booking");
         }
         this.startDate = startDate;
         this.endDate = endDate;
@@ -68,6 +73,7 @@ public class Reservation {
         return result;
     }
 
+    @SuppressWarnings("All")
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -76,6 +82,7 @@ public class Reservation {
         stringBuilder.append("End date: ").append(this.endDate).append("\n");
         stringBuilder.append("Note: ").append(this.note).append("\n");
         stringBuilder.append("Number of guests: ").append(this.numberOfGuests).append("\n");
+        stringBuilder.append("Status: ").append(this.status).append("\n");
 
         return String.valueOf(stringBuilder);
     }

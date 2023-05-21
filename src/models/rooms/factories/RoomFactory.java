@@ -2,7 +2,7 @@ package models.rooms.factories;
 
 import exceptions.rooms.InvalidRoomTypeException;
 import models.rooms.*;
-import models.rooms.contractors.FactoryRoomCreational;
+import models.rooms.contracts.FactoryRoomCreational;
 import models.rooms.enums.RoomTypes;
 
 public class RoomFactory implements FactoryRoomCreational {

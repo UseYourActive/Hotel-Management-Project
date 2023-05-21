@@ -1,7 +1,7 @@
 package models.rooms;
 
-import exceptions.rooms.NoRoomFoundException;
 import exceptions.reservations.ReservationAlreadyExistsException;
+import exceptions.rooms.NoRoomFoundException;
 import models.reservations.Reservation;
 import models.reservations.enums.ReservationStatus;
 
@@ -12,21 +12,23 @@ import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Room implements Comparable<Room>{
+public class Room implements Comparable<Room> {
     @XmlTransient
     private static final AtomicInteger _ID = new AtomicInteger(0);
     @XmlAttribute(name = "number")
     private final long number;
     @XmlElement(name = "numberOfBeds")
     private int numberOfBeds;
-    @XmlTransient
+    @XmlElementWrapper(name = "reservations")
+    @XmlElement(name = "reservation")
     private Set<Reservation> reservations;
 
     public Room() {
         this.number = _ID.incrementAndGet();
-        reservations = new HashSet<>();
+        this.reservations = new HashSet<>();
     }
 
+    @SuppressWarnings("All")
     public boolean addReservation(Reservation reservation) throws ReservationAlreadyExistsException {
         return reservations.add(reservation);
     }
@@ -35,8 +37,8 @@ public class Room implements Comparable<Room>{
         return reservations.remove(reservation);
     }
 
-    public boolean method(LocalDate date){
-        for(Reservation reservation : reservations){
+    public boolean doesNotFallBetweenReservationDate(LocalDate date) {
+        for (Reservation reservation : reservations) {
             if (!(date.isAfter(reservation.getStartDate()) && date.isBefore(reservation.getEndDate()))) {
                 return true;
             }
@@ -55,13 +57,14 @@ public class Room implements Comparable<Room>{
     }
 
     public boolean checkRoomIfAvailable(LocalDate from, LocalDate to) {
-        for(Reservation reservation : reservations){
-            if(reservation.getStatus() == ReservationStatus.CURRENT){
-                if((reservation.getStartDate().isBefore(from) && reservation.getEndDate().isBefore(from)) || (reservation.getStartDate().isAfter(to) && reservation.getEndDate().isAfter(to))){
+        for (Reservation reservation : reservations) {
+            if (reservation.getStatus() != ReservationStatus.CURRENT) {
+                if ((reservation.getStartDate().isBefore(from) && reservation.getEndDate().isBefore(from)) || (reservation.getStartDate().isAfter(to) && reservation.getEndDate().isAfter(to))) {
                     return true;
                 }
             }
-        } return false;
+        }
+        return false;
     }
 
     public Reservation getFreeReservation(LocalDate from, LocalDate to){
@@ -128,7 +131,6 @@ public class Room implements Comparable<Room>{
         this.reservations = reservations;
     }
 
-    @XmlElement(name = "reservation")
     public Set<Reservation> getReservations() {
         return this.reservations;
     }

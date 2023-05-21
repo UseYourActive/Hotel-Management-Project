@@ -1,7 +1,10 @@
 package exceptions.reservations;
 
-public class ReservationException extends Exception{
-    public ReservationException(){}
+import exceptions.HotelException;
+
+public class ReservationException extends HotelException {
+    public ReservationException() {
+    }
 
     public ReservationException(String message) {
         super(message);

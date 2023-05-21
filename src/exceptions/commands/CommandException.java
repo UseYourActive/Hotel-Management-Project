@@ -1,7 +1,10 @@
 package exceptions.commands;
 
-public class CommandException extends Exception{
-    public CommandException(){}
+import exceptions.HotelException;
+
+public class CommandException extends HotelException {
+    public CommandException() {
+    }
 
     public CommandException(String message) {
         super(message);
@@ -13,5 +16,9 @@ public class CommandException extends Exception{
 
     public CommandException(String message, Throwable cause) {
         super(message, cause);
+    }
+
+    public CommandException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
     }
 }

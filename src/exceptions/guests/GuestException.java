@@ -1,7 +1,10 @@
 package exceptions.guests;
 
-public class GuestException extends Exception{
-    public GuestException(){}
+import exceptions.HotelException;
+
+public class GuestException extends HotelException {
+    public GuestException() {
+    }
 
     public GuestException(String message) {
         super(message);

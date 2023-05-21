@@ -88,7 +88,7 @@ JAXB annotation is placed on a method that is not a JAXB property
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:54)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 JAXB annotation is placed on a method that is not a JAXB property
@@ -110,7 +110,7 @@ JAXB annotation is placed on a method that is not a JAXB property
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:54)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 JAXB annotation is placed on a method that is not a JAXB property
@@ -132,7 +132,7 @@ JAXB annotation is placed on a method that is not a JAXB property
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:54)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 JAXB annotation is placed on a method that is not a JAXB property
@@ -154,7 +154,7 @@ JAXB annotation is placed on a method that is not a JAXB property
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:54)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 JAXB annotation is placed on a method that is not a JAXB property
@@ -176,7 +176,7 @@ JAXB annotation is placed on a method that is not a JAXB property
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:54)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 JAXB annotation is placed on a method that is not a JAXB property
@@ -198,7 +198,7 @@ JAXB annotation is placed on a method that is not a JAXB property
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:54)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 6 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "numberOfBeds"
@@ -302,7 +302,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:54)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 6 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "numberOfBeds"
@@ -406,7 +406,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:54)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 JAXB annotation is placed on a method that is not a JAXB property
@@ -428,7 +428,7 @@ JAXB annotation is placed on a method that is not a JAXB property
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:54)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 JAXB annotation is placed on a method that is not a JAXB property
@@ -450,7 +450,7 @@ JAXB annotation is placed on a method that is not a JAXB property
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:54)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 7 counts of IllegalAnnotationExceptions
 models.Hotel does not have a no-arg default constructor.
@@ -557,7 +557,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 7 counts of IllegalAnnotationExceptions
 models.Hotel does not have a no-arg default constructor.
@@ -664,7 +664,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 6 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "numberOfBeds"
@@ -768,7 +768,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 6 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "numberOfBeds"
@@ -872,7 +872,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 5 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -965,7 +965,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 5 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1058,7 +1058,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1121,7 +1121,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1184,7 +1184,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1247,7 +1247,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1310,7 +1310,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1373,7 +1373,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1436,7 +1436,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1499,7 +1499,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1562,7 +1562,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 4 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1640,7 +1640,7 @@ Class has two properties of the same name "startDate"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 4 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1718,7 +1718,7 @@ Class has two properties of the same name "startDate"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1781,7 +1781,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1844,7 +1844,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1907,7 +1907,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "endDate"
@@ -1970,7 +1970,7 @@ Class has two properties of the same name "status"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 2 counts of IllegalAnnotationExceptions
 util.adapters.errorlogger.ErrorWritable is an interface, and JAXB can't handle interfaces.
@@ -1978,10 +1978,10 @@ util.adapters.errorlogger.ErrorWritable is an interface, and JAXB can't handle i
 		at util.adapters.errorlogger.ErrorWritable
 		at private util.adapters.errorlogger.ErrorWritable models.Hotel.errorLogger
 		at models.Hotel
-models.rooms.contractors.FactoryRoomCreational is an interface, and JAXB can't handle interfaces.
+models.rooms.contracts.FactoryRoomCreational is an interface, and JAXB can't handle interfaces.
 	this problem is related to the following location:
-		at models.rooms.contractors.FactoryRoomCreational
-		at private models.rooms.contractors.FactoryRoomCreational models.Hotel.factory
+		at models.rooms.contracts.FactoryRoomCreational
+		at private models.rooms.contracts.FactoryRoomCreational models.Hotel.factory
 		at models.Hotel
 
 	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
@@ -1998,7 +1998,7 @@ models.rooms.contractors.FactoryRoomCreational is an interface, and JAXB can't h
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:48)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 2 counts of IllegalAnnotationExceptions
 util.adapters.errorlogger.ErrorWritable is an interface, and JAXB can't handle interfaces.
@@ -2006,10 +2006,10 @@ util.adapters.errorlogger.ErrorWritable is an interface, and JAXB can't handle i
 		at util.adapters.errorlogger.ErrorWritable
 		at private util.adapters.errorlogger.ErrorWritable models.Hotel.errorLogger
 		at models.Hotel
-models.rooms.contractors.FactoryRoomCreational is an interface, and JAXB can't handle interfaces.
+models.rooms.contracts.FactoryRoomCreational is an interface, and JAXB can't handle interfaces.
 	this problem is related to the following location:
-		at models.rooms.contractors.FactoryRoomCreational
-		at private models.rooms.contractors.FactoryRoomCreational models.Hotel.factory
+		at models.rooms.contracts.FactoryRoomCreational
+		at private models.rooms.contracts.FactoryRoomCreational models.Hotel.factory
 		at models.Hotel
 
 	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:106)
@@ -2026,7 +2026,7 @@ models.rooms.contractors.FactoryRoomCreational is an interface, and JAXB can't h
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:48)
 javax.xml.bind.UnmarshalException: Unable to create an instance of models.rooms.Room
  - with linked exception:
@@ -2055,7 +2055,7 @@ javax.xml.bind.UnmarshalException: Unable to create an instance of models.rooms.
 	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:209)
 	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:194)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:47)
 Caused by: java.lang.InstantiationException
 	at java.base/jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
@@ -2110,7 +2110,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:47)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "hotelRooms"
@@ -2157,7 +2157,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:32)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:47)
 javax.xml.bind.UnmarshalException: Unable to create an instance of models.rooms.Room
  - with linked exception:
@@ -2186,7 +2186,7 @@ javax.xml.bind.UnmarshalException: Unable to create an instance of models.rooms.
 	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:209)
 	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:194)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:47)
 Caused by: java.lang.InstantiationException
 	at java.base/jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
@@ -2223,7 +2223,7 @@ javax.xml.bind.UnmarshalException: Unable to create an instance of models.rooms.
 	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:209)
 	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:194)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:43)
 Caused by: java.lang.InstantiationException
 	at java.base/jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
@@ -2260,7 +2260,7 @@ javax.xml.bind.UnmarshalException: Unable to create an instance of models.rooms.
 	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:209)
 	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:194)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:43)
 Caused by: java.lang.InstantiationException
 	at java.base/jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
@@ -2274,13 +2274,13 @@ javax.xml.bind.PropertyException: name: jaxb.formatted.output value: true
 	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.setProperty(AbstractUnmarshallerImpl.java:357)
 	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.setProperty(UnmarshallerImpl.java:514)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:43)
 javax.xml.bind.PropertyException: name: jaxb.formatted.output value: true
 	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.setProperty(AbstractUnmarshallerImpl.java:357)
 	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.setProperty(UnmarshallerImpl.java:514)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:21)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2309,7 +2309,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2338,7 +2338,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2367,7 +2367,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2396,7 +2396,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2425,7 +2425,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2454,7 +2454,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2483,7 +2483,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2512,7 +2512,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2541,7 +2541,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2570,7 +2570,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2599,7 +2599,7 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.readFromFile(JAXBParser.java:19)
-	at commandlineinterface.Open.execute(Open.java:40)
+	at cli.Open.execute(Open.java:40)
 	at Main.main(Main.java:43)
 com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
 Class has two properties of the same name "reservations"
@@ -2628,5 +2628,5 @@ Class has two properties of the same name "reservations"
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
 	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
 	at utils.parsers.xml.JAXBParser.createFileIfNotExist(JAXBParser.java:33)
-	at commandlineinterface.Open.execute(Open.java:50)
+	at cli.Open.execute(Open.java:50)
 	at Main.main(Main.java:43)

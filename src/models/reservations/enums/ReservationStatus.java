@@ -1,9 +1,10 @@
 package models.reservations.enums;
 
-public enum ReservationStatus{
+public enum ReservationStatus {
     CURRENT("Current"),
     PAST("Past"),
-    FUTURE("Future");
+    FUTURE("Future"),
+    NONE("None");
 
     private final String name;
 

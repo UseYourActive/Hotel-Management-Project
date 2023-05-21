@@ -8,6 +8,4 @@ import java.io.File;
 public interface FileParser <T> {
     T readFromFile(File file) throws JAXBException;
     void writeToFile(Hotel hotel, File file) throws JAXBException;
-    void createFileIfNotExist(Hotel hotel, File file) throws JAXBException;
-    boolean deleteFile(File file);
 }

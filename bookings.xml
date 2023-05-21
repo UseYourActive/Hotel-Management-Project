@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hotel>
+    <room number="1">
+        <numberOfBeds>1</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2023-11-10</startDate>
+                <endDate>2023-11-13</endDate>
+                <note>orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="2">
+        <numberOfBeds>2</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="3">
+        <numberOfBeds>3</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="4">
+        <numberOfBeds>4</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="5">
+        <numberOfBeds>1</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="6">
+        <numberOfBeds>2</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="7">
+        <numberOfBeds>3</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="8">
+        <numberOfBeds>4</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="9">
+        <numberOfBeds>1</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="10">
+        <numberOfBeds>2</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="11">
+        <numberOfBeds>3</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="12">
+        <numberOfBeds>4</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="13">
+        <numberOfBeds>1</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="14">
+        <numberOfBeds>2</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="15">
+        <numberOfBeds>3</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="16">
+        <numberOfBeds>4</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="17">
+        <numberOfBeds>1</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="18">
+        <numberOfBeds>2</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="19">
+        <numberOfBeds>3</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+    <room number="20">
+        <numberOfBeds>4</numberOfBeds>
+        <reservations>
+            <reservation status="Future">
+                <startDate>2022-10-10</startDate>
+                <endDate>2022-10-13</endDate>
+                <note>Orozov</note>
+                <numberOfGuests>1</numberOfGuests>
+            </reservation>
+        </reservations>
+    </room>
+</hotel>

@@ -1,11 +1,10 @@
-import commandlineinterface.factories.DefaultCommandFactory;
-import commandlineinterface.enums.DefaultCommands;
-import utils.services.HotelService;
-import models.Hotel;
-import models.hotelcommands.enums.HotelCommands;
-import models.hotelcommands.factories.HotelCommandsFactory;
-import utils.errorlogger.ErrorLogWriter;
+import cli.enums.DefaultCommands;
+import cli.factories.DefaultCommandFactory;
 import exceptions.commands.InvalidCommandException;
+import models.Hotel;
+import models.hotel.commands.enums.HotelCommands;
+import models.hotel.commands.factories.HotelCommandsFactory;
+import models.services.HotelService;
 import utils.parsers.xml.JAXBParser;
 
 import java.util.ArrayList;
@@ -13,22 +12,21 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Application {
-    public static void run(){
+    public static void run() {
         Scanner scanner = new Scanner(System.in);
-        ErrorLogWriter errorLogWriter = new ErrorLogWriter();
         JAXBParser jaxbParser = new JAXBParser();
-        Hotel hotel = Hotel.getInstance(errorLogWriter);
-        HotelService hotelService = new HotelService(errorLogWriter, jaxbParser);
-        DefaultCommandFactory commandFactory = new DefaultCommandFactory(hotelService, errorLogWriter);
-        HotelCommandsFactory hotelCommandsFactory = new HotelCommandsFactory(hotelService, errorLogWriter);
+        Hotel hotel = new Hotel();
+        HotelService hotelService = new HotelService(jaxbParser, hotel);
+        DefaultCommandFactory commandFactory = new DefaultCommandFactory(hotelService);
+        HotelCommandsFactory hotelCommandsFactory = new HotelCommandsFactory(hotelService);
 
         String input;
         List<String> arguments;
         Enum<?> command;
 
-        while(true){
+        while (true) {
             input = scanner.nextLine().toLowerCase();
-            arguments = new ArrayList<>(List.of(input.split(" ")));
+            arguments = new ArrayList<>(List.of(input.split("\\s+(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)")));
             try {
                 command = commandParsingMethod(arguments.get(0));
                 if(command instanceof DefaultCommands){

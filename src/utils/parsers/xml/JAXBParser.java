@@ -24,14 +24,4 @@ public class JAXBParser implements FileParser<Hotel> {
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         marshaller.marshal(hotel, file);
     }
-
-    public void createFileIfNotExist(Hotel hotel, File file) throws JAXBException {
-        JAXBContext context = JAXBContext.newInstance(Hotel.class);
-        Marshaller marshaller = context.createMarshaller();
-        marshaller.marshal(hotel, file);
-    }
-
-    public boolean deleteFile(File file){
-        return file.delete();
-    }
 }
