@@ -1,10 +1,10 @@
-package models.hotelcommands;
+package models.hotel.commands;
 
 import exceptions.reservations.NotAValidReservationDateRangeException;
 import exceptions.reservations.ReservationAlreadyExistsException;
 import exceptions.rooms.UnavailableRoomException;
 import models.Hotel;
-import models.hotelcommands.contracts.HotelCommand;
+import models.hotel.commands.contracts.HotelCommand;
 import models.reservations.Reservation;
 import models.rooms.Room;
 
@@ -12,14 +12,14 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Unavailable implements HotelCommand {
-    private Hotel hotel;
-    private long id;
-    private LocalDate from;
-    private LocalDate to;
-    private String note;
+    private final long id;
+    private final LocalDate from;
+    private final LocalDate to;
+    private final String note;
+    private final List<Room> hotelRooms;
 
     public Unavailable(List<String> arguments, Hotel hotel) {
-        this.hotel = hotel;
+        this.hotelRooms = hotel.getHotelRooms();
         this.id = Long.parseLong(arguments.get(0));
         this.from = LocalDate.parse(arguments.get(1));
         this.to = LocalDate.parse(arguments.get(2));
@@ -29,9 +29,9 @@ public class Unavailable implements HotelCommand {
     @Override
     public void execute() throws NotAValidReservationDateRangeException, UnavailableRoomException, ReservationAlreadyExistsException {
 
-        for(Room room : hotel.getHotelRooms()){
-            if(room.getNumber() == id){
-                if(!room.addReservation(new Reservation(from, to, note, 0))){
+        for (Room room : this.hotelRooms) {
+            if (room.getNumber() == id) {
+                if (!room.addReservation(new Reservation(from, to, note, 0))) {
                     throw new UnavailableRoomException("There is already a restriction to this room");
                 }
                 break;

@@ -18,8 +18,8 @@ public class CheckOut implements HotelCommand {
 
     @Override
     public void execute() throws NoRoomFoundException {
-        for(Room room : hotel.getHotelRooms()){
-            if(room.getNumber() == id){
+        for (Room room : this.hotelRooms) {
+            if (room.getNumber() == id) {
                 room.updateRoomStatusCheckedOut();
             }
         }
