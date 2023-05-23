@@ -1,7 +1,8 @@
 package models.hotel.commands;
 
-import exceptions.reservations.NotAValidReservationDateRangeException;
 import exceptions.reservations.ReservationAlreadyExistsException;
+import exceptions.reservations.ReservationException;
+import exceptions.rooms.RoomException;
 import models.Hotel;
 import models.hotel.commands.contracts.HotelCommand;
 import models.reservations.Reservation;
@@ -34,21 +35,24 @@ public class CheckIn implements HotelCommand {
     }
 
     @Override
-    public void execute() throws NotAValidReservationDateRangeException, ReservationAlreadyExistsException {
+    public void execute() throws ReservationException, RoomException {
         for (Room room : this.hotelRooms) {
             if (room.getNumber() == id) {
                 if (argumentSize != 5) {
                     numberOfGuests = room.getNumberOfBeds();
+                } else if (numberOfGuests > room.getNumberOfBeds()) {
+                    throw new RoomException("Not enough beds in the room");
                 }
 
-                Reservation reservation = new Reservation(from, to, note, numberOfGuests);
+                if (from.isBefore(LocalDate.now())) {
+                    throw new ReservationException("Can't make a reservation on a past date!");
+                }
 
                 if (room.checkRoomIfAvailable(from, to)) {
-                    room.addReservation(reservation);
+                    room.addReservation(new Reservation(from, to, note, numberOfGuests));
                 } else {
-                    throw new ReservationAlreadyExistsException("Can't make a reservation, one already exists");
+                    throw new ReservationAlreadyExistsException("Can't make a reservation, one already exists!");
                 }
-
 
                 System.out.println("Successfully made the reservation!");
                 break;

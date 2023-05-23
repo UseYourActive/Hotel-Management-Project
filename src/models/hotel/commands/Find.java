@@ -32,7 +32,6 @@ public class Find implements HotelCommand {
     }
 
     public List<Room> getRoomList(int numberOfBeds, LocalDate from, LocalDate to){
-
         List<Room> roomList = new ArrayList<>();
 
         for (Room room : this.hotelRooms) {

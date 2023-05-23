@@ -52,7 +52,6 @@ public class Guest {
     public String getUniqueIdentificationNumber() {
         return uniqueIdentificationNumber;
     }
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

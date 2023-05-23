@@ -9,10 +9,7 @@ import java.io.File;
 public class HotelService {
     private File file;
     private Hotel repository;
-    private FileParser<Hotel> jaxbParser;
-
-    public HotelService() {
-    }
+    private final FileParser<Hotel> jaxbParser;
 
     public HotelService(FileParser<Hotel> jaxbParser, Hotel hotel) {
         this.repository = hotel;
@@ -20,11 +17,11 @@ public class HotelService {
     }
 
     public void loadRepository() throws JAXBException {
-        repository = jaxbParser.readFromFile(file);
+        this.repository = this.jaxbParser.readFromFile(this.file);
     }
 
     public void exportToFile() throws JAXBException {
-        jaxbParser.writeToFile(repository, file);
+        this.jaxbParser.writeToFile(this.repository, this.file);
     }
 
     public File getFile() {

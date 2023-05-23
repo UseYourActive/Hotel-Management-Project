@@ -1,7 +1,5 @@
 package exceptions.reservations;
 
-import exceptions.reservations.ReservationException;
-
 public class ReservationAlreadyExistsException extends ReservationException {
     public ReservationAlreadyExistsException(){}
 
@@ -15,5 +13,9 @@ public class ReservationAlreadyExistsException extends ReservationException {
 
     public ReservationAlreadyExistsException(String message, Throwable cause) {
         super(message, cause);
+    }
+
+    public ReservationAlreadyExistsException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
     }
 }

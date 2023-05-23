@@ -9,7 +9,6 @@ import javax.xml.bind.annotation.*;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.concurrent.atomic.AtomicInteger;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Room implements Comparable<Room> {
@@ -24,7 +23,6 @@ public class Room implements Comparable<Room> {
     private Set<Reservation> reservations;
 
     public Room() {
-        this.number = _ID.incrementAndGet();
         this.reservations = new HashSet<>();
     }
 
@@ -33,17 +31,21 @@ public class Room implements Comparable<Room> {
         return reservations.add(reservation);
     }
 
-    public boolean removeReservation(Reservation reservation){
+    public boolean removeReservation(Reservation reservation) {
         return reservations.remove(reservation);
     }
 
-    public boolean doesNotFallBetweenReservationDate(LocalDate date) {
+    @SuppressWarnings("All")
+    public boolean checkReservationStatus(LocalDate date) {
         for (Reservation reservation : reservations) {
-            if (!(date.isAfter(reservation.getStartDate()) && date.isBefore(reservation.getEndDate()))) {
-                return true;
+            LocalDate startDate = reservation.getStartDate();
+            LocalDate endDate = reservation.getEndDate();
+
+            if (date.compareTo(startDate) >= 0 && date.compareTo(endDate) <= 0) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     public void updateRoomStatusCheckedOut() throws NoRoomFoundException {
@@ -58,13 +60,11 @@ public class Room implements Comparable<Room> {
 
     public boolean checkRoomIfAvailable(LocalDate from, LocalDate to) {
         for (Reservation reservation : reservations) {
-            if (reservation.getStatus() != ReservationStatus.CURRENT) {
-                if ((reservation.getStartDate().isBefore(from) && reservation.getEndDate().isBefore(from)) || (reservation.getStartDate().isAfter(to) && reservation.getEndDate().isAfter(to))) {
-                    return true;
-                }
+            if (!reservation.checkCompatability(from, to)) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     public Reservation getFreeReservation(LocalDate from, LocalDate to){
@@ -90,7 +90,10 @@ public class Room implements Comparable<Room> {
 
         stringBuilder.append("Room number: ").append(this.number).append("\n");
         stringBuilder.append("Number of beds: ").append(this.numberOfBeds).append("\n");
-        stringBuilder.append("Reservations: ").append(this.reservations).append("\n");
+
+        for (Reservation reservation : this.reservations) {
+            stringBuilder.append("Reservations: \n").append(reservation).append("\n");
+        }
 
         return String.valueOf(stringBuilder);
     }
@@ -133,5 +136,9 @@ public class Room implements Comparable<Room> {
 
     public Set<Reservation> getReservations() {
         return this.reservations;
+    }
+
+    public void setNumber(long number) {
+        this.number = number;
     }
 }

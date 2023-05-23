@@ -18,7 +18,7 @@ public class DefaultCommandFactory {
     public DefaultCommand createCommand(DefaultCommands command, List<String> arguments) throws InvalidCommandException {
         DefaultCommand commandObject;
 
-        if(command == null) {
+        if (command == null) {
             throw new InvalidCommandException("Please enter a valid command!", new RuntimeException());
         }
 

@@ -1,7 +1,6 @@
 import cli.enums.DefaultCommands;
 import cli.factories.DefaultCommandFactory;
 import exceptions.commands.InvalidCommandException;
-import models.Hotel;
 import models.hotel.commands.enums.HotelCommands;
 import models.hotel.commands.factories.HotelCommandsFactory;
 import models.services.HotelService;
@@ -15,25 +14,34 @@ public class Application {
     public static void run() {
         Scanner scanner = new Scanner(System.in);
         JAXBParser jaxbParser = new JAXBParser();
-        Hotel hotel = new Hotel();
-        HotelService hotelService = new HotelService(jaxbParser, hotel);
+        HotelService hotelService = new HotelService(jaxbParser);
         DefaultCommandFactory commandFactory = new DefaultCommandFactory(hotelService);
         HotelCommandsFactory hotelCommandsFactory = new HotelCommandsFactory(hotelService);
+        // create an engine
 
         String input;
         List<String> arguments;
         Enum<?> command;
 
         while (true) {
+            System.out.print(">");
             input = scanner.nextLine().toLowerCase();
+
+//            if (!input.endsWith(".xml")) {
+//                input = input.concat(".xml");
+//            }
+
             arguments = new ArrayList<>(List.of(input.split("\\s+(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)")));
+
             try {
                 command = commandParsingMethod(arguments.get(0));
-                if(command instanceof DefaultCommands){
+
+                if (command instanceof DefaultCommands) {
                     commandFactory.createCommand((DefaultCommands) command, arguments.subList(1, arguments.size())).execute();
-                }else if(command instanceof HotelCommands){
+                } else if (command instanceof HotelCommands) {
                     hotelCommandsFactory.createCommand((HotelCommands) command, arguments.subList(1, arguments.size())).execute();
                 }
+
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }

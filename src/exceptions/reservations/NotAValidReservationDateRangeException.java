@@ -1,7 +1,5 @@
 package exceptions.reservations;
 
-import exceptions.reservations.ReservationException;
-
 public class NotAValidReservationDateRangeException extends ReservationException {
     public NotAValidReservationDateRangeException(){}
 
@@ -15,5 +13,9 @@ public class NotAValidReservationDateRangeException extends ReservationException
 
     public NotAValidReservationDateRangeException(String message, Throwable cause) {
         super(message, cause);
+    }
+
+    public NotAValidReservationDateRangeException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
     }
 }

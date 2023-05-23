@@ -29,7 +29,7 @@ public class FindImportant implements HotelCommand {
         Find find = new Find(arguments, hotel);
 
         if(find.getRoomList(numberOfBeds, from, to).isEmpty()){
-            throw new NoRoomFoundException("Didn't find any room");
+            throw new NoRoomFoundException("Didn't find a room");
         }
 
         List<Room> roomList = new ArrayList<>();

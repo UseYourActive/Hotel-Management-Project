@@ -17,26 +17,19 @@ public class Open implements DefaultCommand {
     }
 
     @Override
-    public void execute() {
+    public void execute() throws JAXBException {
         hotelService.setFile(new File(pathway));
         if (hotelService.getFile().exists()) {
-            try {
-                hotelService.loadRepository();
-            } catch (JAXBException e) {
-                e.printStackTrace();
-            }
+            hotelService.loadRepository();
+
             System.out.println(pathway + " file has been successfully opened!");
-        }else {
+        } else {
             System.out.println("File not found!");
 
-            try {
-                hotelService.exportToFile();
-            } catch (JAXBException e) {
-                e.printStackTrace();
-            }
+            RoomGenerator.generateRooms(this.hotelService);
+            hotelService.exportToFile();
 
             System.out.println("File has been created!");
         }
-
     }
 }

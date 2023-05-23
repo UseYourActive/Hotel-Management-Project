@@ -1,7 +1,5 @@
 package exceptions.rooms;
 
-import exceptions.rooms.RoomException;
-
 public class NoRoomFoundException extends RoomException {
     public NoRoomFoundException(){}
 
@@ -15,5 +13,9 @@ public class NoRoomFoundException extends RoomException {
 
     public NoRoomFoundException(String message, Throwable cause) {
         super(message, cause);
+    }
+
+    public NoRoomFoundException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
     }
 }

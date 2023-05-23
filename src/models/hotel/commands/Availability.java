@@ -28,7 +28,7 @@ public class Availability implements HotelCommand {
         Set<Room> roomList = new HashSet<>();
 
         for (Room room : this.hotelRooms) {
-            if (room.doesNotFallBetweenReservationDate(this.date)) {
+            if (room.checkReservationStatus(this.date)) {
                 roomList.add(room);
             }
         }
@@ -38,9 +38,10 @@ public class Availability implements HotelCommand {
 //        Извежда списък на свободните стаи на дата <date>, ако не е зададена, се използва текущата дата.
     }
 
-    public void printRooms(Set<Room> roomList){
-        for(Room room : roomList){
-            System.out.println(room);
+    public void printRooms(Set<Room> roomList) {
+        for (Room room : roomList) {
+            System.out.println(room.getNumber());
+            System.out.println(room.getNumberOfBeds());
         }
     }
 }

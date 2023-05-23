@@ -10,8 +10,8 @@ public enum DefaultCommands {
 
     private final String command;
 
-    DefaultCommands(String roomType) {
-        this.command = roomType;
+    DefaultCommands(String command) {
+        this.command = command;
     }
 
     @Override

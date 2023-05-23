@@ -7,6 +7,7 @@ import models.rooms.Room;
 
 import java.time.Duration;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,12 +30,14 @@ public class Report implements HotelCommand {
         for (Room room : this.hotelRooms) {
             long numberOfDays = 0;
             for (Reservation reservation : room.getReservations()) {
-                LocalDate start = reservation.getStartDate();
-                LocalDate end = reservation.getEndDate();
-                if (start.isAfter(from) && end.isBefore(to)) {
+                LocalDateTime start = reservation.getStartDate().atStartOfDay();
+                LocalDateTime end = reservation.getEndDate().atStartOfDay();
+
+                if (start.isAfter(from.atStartOfDay()) && end.isBefore(to.atStartOfDay())) {
                     numberOfDays += Duration.between(start, end).toDays();
                 }
             }
+
             map.put(room.getNumber(), numberOfDays);
         }
 
@@ -44,9 +47,14 @@ public class Report implements HotelCommand {
 //        Извежда се списък, в който за всяка стая, използвана в дадения период, се извежда и броя на дните, в които е била използвана.
     }
 
-    private void print(Map<Long, Long> map){
-        for(Map.Entry<Long, Long> record : map.entrySet()){
-            System.out.println("Room: " + record.getKey() + " Number of days occupied in the period: " + record.getValue());
+    private void print(Map<Long, Long> map) {
+        for (Map.Entry<Long, Long> record : map.entrySet()) {
+            long roomNumber = record.getKey();
+            long numberOfDaysOccupied = record.getValue();
+
+            if (numberOfDaysOccupied > 0) {
+                System.out.println("Room: " + roomNumber + " Number of days occupied in the period: " + numberOfDaysOccupied);
+            }
         }
     }
 }

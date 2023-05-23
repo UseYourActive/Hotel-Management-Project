@@ -43,14 +43,33 @@ public class Reservation {
         this.status = defineStatus();
     }
 
-    public ReservationStatus defineStatus(){
-        if(LocalDate.now().isBefore(startDate)){
+    public ReservationStatus defineStatus() {
+        if (LocalDate.now().isBefore(startDate)) {
             return ReservationStatus.FUTURE;
-        } else if(LocalDate.now().isAfter(endDate)){
+        } else if (LocalDate.now().isAfter(endDate)) {
             return ReservationStatus.PAST;
-        }else {
+        } else {
             return ReservationStatus.CURRENT;
         }
+    }
+
+    public boolean checkCompatability(LocalDate from, LocalDate to) {
+        LocalDate startDate = this.getStartDate();
+        LocalDate endDate = this.getEndDate();
+
+        if (from.isEqual(startDate) || to.isEqual(endDate)) {
+            return false;
+        }
+
+        if (from.isAfter(startDate) && from.isBefore(endDate)) {
+            return false;
+        }
+
+        if (to.isAfter(startDate) && to.isBefore(endDate)) {
+            return false;
+        }
+
+        return !from.isBefore(startDate) || !to.isAfter(endDate);
     }
 
     @Override

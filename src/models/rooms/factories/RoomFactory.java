@@ -5,8 +5,11 @@ import models.rooms.*;
 import models.rooms.contracts.FactoryRoomCreational;
 import models.rooms.enums.RoomTypes;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class RoomFactory implements FactoryRoomCreational {
-    @SuppressWarnings("All")
+    private static final AtomicInteger number = new AtomicInteger(0);
+
     public Room createRoom(RoomTypes roomType) throws InvalidRoomTypeException {
         Room roomCreator;
 
@@ -14,22 +17,14 @@ public class RoomFactory implements FactoryRoomCreational {
             throw new InvalidRoomTypeException("Could not find such a room type!");
         }
 
-        switch (roomType) {
-            case SINGLE_ROOM:
-                roomCreator = new SingleRoom(); // return i bez break?
-                break;
-            case DOUBLE_ROOM:
-                roomCreator =  new DoubleRoom(); // return i bez break?
-                break;
-            case DELUXE_ROOM:
-                roomCreator = new DeluxeRoom(); // return i bez break?
-                break;
-            case PRESIDENT_ROOM:
-                roomCreator = new PresidentRoom(); // return i bez break?
-                break;
-            default:
-                throw new InvalidRoomTypeException("Could not find such a room type!", new RuntimeException());
-        }
+        roomCreator = switch (roomType) {
+            case SINGLE_ROOM -> new SingleRoom();
+            case DOUBLE_ROOM -> new DoubleRoom();
+            case DELUXE_ROOM -> new DeluxeRoom();
+            case PRESIDENT_ROOM -> new PresidentRoom();
+        };
+
+        roomCreator.setNumber(number.incrementAndGet());
 
         return roomCreator;
     }

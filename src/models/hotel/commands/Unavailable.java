@@ -2,10 +2,11 @@ package models.hotel.commands;
 
 import exceptions.reservations.NotAValidReservationDateRangeException;
 import exceptions.reservations.ReservationAlreadyExistsException;
-import exceptions.rooms.UnavailableRoomException;
+import exceptions.rooms.NoRoomFoundException;
 import models.Hotel;
 import models.hotel.commands.contracts.HotelCommand;
 import models.reservations.Reservation;
+import models.reservations.enums.ReservationStatus;
 import models.rooms.Room;
 
 import java.time.LocalDate;
@@ -27,13 +28,22 @@ public class Unavailable implements HotelCommand {
     }
 
     @Override
-    public void execute() throws NotAValidReservationDateRangeException, UnavailableRoomException, ReservationAlreadyExistsException {
-
+    public void execute() throws NotAValidReservationDateRangeException, ReservationAlreadyExistsException, NoRoomFoundException {
         for (Room room : this.hotelRooms) {
-            if (room.getNumber() == id) {
-                if (!room.addReservation(new Reservation(from, to, note, 0))) {
-                    throw new UnavailableRoomException("There is already a restriction to this room");
+            if (room.getNumber() == this.id) {
+                Reservation customReservation = new Reservation(this.from, this.to, this.note, 0);
+                customReservation.setStatus(ReservationStatus.UNAVAILABLE);
+
+                for (Reservation reservation : room.getReservations()) {
+                    if (!reservation.checkCompatability(this.from, this.to)) {
+                        room.removeReservation(reservation);
+                        break;
+                    }
                 }
+
+                room.addReservation(customReservation);
+                System.out.println("Successfully made unavailable room with number " + room.getNumber() + " from " + this.from + " to " + this.to + " with note " + this.note);
+
                 break;
             }
         }

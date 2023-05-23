@@ -17,4 +17,8 @@ public class ReservationException extends HotelException {
     public ReservationException(String message, Throwable cause) {
         super(message, cause);
     }
+
+    public ReservationException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
 }
