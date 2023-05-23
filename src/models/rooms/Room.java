@@ -12,12 +12,12 @@ import java.util.Set;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Room implements Comparable<Room> {
-    @XmlTransient
-    private static final AtomicInteger _ID = new AtomicInteger(0);
-    @XmlAttribute(name = "number")
-    private final long number;
+    @XmlAttribute(name = "id")
+    private long number;
+
     @XmlElement(name = "numberOfBeds")
     private int numberOfBeds;
+
     @XmlElementWrapper(name = "reservations")
     @XmlElement(name = "reservation")
     private Set<Reservation> reservations;
@@ -83,7 +83,6 @@ public class Room implements Comparable<Room> {
         }return null;
     }
 
-    @SuppressWarnings("All")
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

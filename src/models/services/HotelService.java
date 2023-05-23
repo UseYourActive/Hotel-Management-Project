@@ -11,8 +11,8 @@ public class HotelService {
     private Hotel repository;
     private final FileParser<Hotel> jaxbParser;
 
-    public HotelService(FileParser<Hotel> jaxbParser, Hotel hotel) {
-        this.repository = hotel;
+    public HotelService(FileParser<Hotel> jaxbParser) {
+        this.repository = new Hotel();
         this.jaxbParser = jaxbParser;
     }
 
@@ -38,13 +38,5 @@ public class HotelService {
 
     public Hotel getRepository() {
         return repository;
-    }
-
-    public FileParser<Hotel> getJaxbParser() {
-        return jaxbParser;
-    }
-
-    public void setJaxbParser(FileParser<Hotel> jaxbParser) {
-        this.jaxbParser = jaxbParser;
     }
 }

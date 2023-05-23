@@ -28,7 +28,7 @@ public class Reservation {
     @XmlAttribute(name = "status")
     private ReservationStatus status;
 
-    public Reservation() {
+    private Reservation() {
         this.status = ReservationStatus.NONE;
     }
 

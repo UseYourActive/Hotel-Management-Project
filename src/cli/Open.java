@@ -1,6 +1,7 @@
 package cli;
 
 import cli.contracts.DefaultCommand;
+import models.rooms.factories.RoomGenerator;
 import models.services.HotelService;
 
 import javax.xml.bind.JAXBException;

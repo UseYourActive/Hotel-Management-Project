@@ -11,14 +11,14 @@ import java.util.List;
 
 @XmlRootElement(name = "hotel")
 public class Hotel {
-    private List<Room> hotelRooms;
+    @XmlElementWrapper(name = "rooms")
+    @XmlElement(name = "room")
+    private final List<Room> hotelRooms;
+
     @XmlTransient
     private final String hotelName;
-    @XmlTransient
-    private final RoomFactory factory;
 
     public Hotel() {
-        this.factory = new RoomFactory();
         this.hotelRooms = new ArrayList<>();
         this.hotelName = "Orozov le grande hotel";
     }
@@ -36,12 +36,7 @@ public class Hotel {
         return String.valueOf(stringBuilder);
     }
 
-    @XmlElement(name = "room")
     public List<Room> getHotelRooms() {
         return this.hotelRooms;
-    }
-
-    public void setHotelRooms(List<Room> hotelRooms) {
-        this.hotelRooms = hotelRooms;
     }
 }

@@ -22,28 +22,14 @@ public class DefaultCommandFactory {
             throw new InvalidCommandException("Please enter a valid command!", new RuntimeException());
         }
 
-        switch (command) {
-            case OPEN:
-                commandObject = new Open(this.hotelService, arguments);
-                break;
-            case CLOSE:
-                commandObject = new Close(this.hotelService);
-                break;
-            case SAVE:
-                commandObject = new Save(this.hotelService);
-                break;
-            case SAVEAS:
-                commandObject = new SaveAs(this.hotelService, arguments);
-                break;
-            case HELP:
-                commandObject = new Help();
-                break;
-            case EXIT:
-                commandObject = new Exit(this.hotelService);
-                break;
-            default:
-                throw new InvalidCommandException("Please enter a valid command!");
-        }
+        commandObject = switch (command) {
+            case OPEN -> new Open(this.hotelService, arguments);
+            case CLOSE -> new Close(this.hotelService);
+            case SAVE -> new Save(this.hotelService);
+            case SAVEAS -> new SaveAs(this.hotelService, arguments);
+            case HELP -> new Help();
+            case EXIT -> new Exit(this.hotelService);
+        };
 
         return commandObject;
     }
