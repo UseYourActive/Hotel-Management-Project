@@ -53,6 +53,11 @@ public class Reservation {
         }
     }
 
+    @SuppressWarnings("All")
+    public boolean checkIfReservationBusy(LocalDate from, LocalDate to) {
+        return this.getStartDate().compareTo(from) >= 0 && this.getEndDate().compareTo(to) <= 0;
+    }
+
     public boolean checkCompatability(LocalDate from, LocalDate to) {
         LocalDate startDate = this.getStartDate();
         LocalDate endDate = this.getEndDate();
@@ -97,11 +102,14 @@ public class Reservation {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
 
-        stringBuilder.append("Start date: ").append(this.startDate).append("\n");
-        stringBuilder.append("End date: ").append(this.endDate).append("\n");
-        stringBuilder.append("Note: ").append(this.note).append("\n");
-        stringBuilder.append("Number of guests: ").append(this.numberOfGuests).append("\n");
-        stringBuilder.append("Status: ").append(this.status).append("\n");
+        stringBuilder.append("start date ").append(" end date ").append(" note ").append(" number of guests ").append(" status ").append("\n");
+        stringBuilder.append(this.startDate).append(" ").append(this.endDate).append(" ").append(this.note).append(" ").append(this.numberOfGuests).append(" ").append(this.status).append("\n");
+
+//        stringBuilder.append("Start date: ").append(this.startDate).append("\n");
+//        stringBuilder.append("End date: ").append(this.endDate).append("\n");
+//        stringBuilder.append("Note: ").append(this.note).append("\n");
+//        stringBuilder.append("Number of guests: ").append(this.numberOfGuests).append("\n");
+//        stringBuilder.append("Status: ").append(this.status).append("\n");
 
         return String.valueOf(stringBuilder);
     }

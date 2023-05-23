@@ -27,10 +27,6 @@ public class Application {
             System.out.print(">");
             input = scanner.nextLine().toLowerCase();
 
-//            if (!input.endsWith(".xml")) {
-//                input = input.concat(".xml");
-//            }
-
             arguments = new ArrayList<>(List.of(input.split("\\s+(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)")));
 
             try {

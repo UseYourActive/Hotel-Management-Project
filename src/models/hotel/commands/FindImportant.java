@@ -1,64 +1,71 @@
 package models.hotel.commands;
 
-import exceptions.rooms.NoRoomFoundException;
+import exceptions.reservations.NotAValidReservationDateRangeException;
 import models.Hotel;
 import models.hotel.commands.contracts.HotelCommand;
+import models.reservations.Reservation;
+import models.reservations.enums.ReservationStatus;
 import models.rooms.Room;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
+import java.util.Scanner;
 
-public class FindImportant implements HotelCommand {
+public class FindImportant extends Find implements HotelCommand {
     private Hotel hotel;
-    private final int numberOfBeds;
-    private final LocalDate from;
-    private final LocalDate to;
-    private final List<String> arguments;
 
     public FindImportant(List<String> arguments, Hotel hotel) {
-        this.arguments = arguments;
+        super(arguments, hotel);
         this.hotel = hotel;
-        this.numberOfBeds = Integer.parseInt(arguments.get(0));
-        this.from = LocalDate.parse(arguments.get(1));
-        this.to = LocalDate.parse(arguments.get(2));
     }
 
     @Override
-    public void execute() throws NoRoomFoundException {
-        Find find = new Find(arguments, hotel);
+    public void execute() throws NotAValidReservationDateRangeException {
+        List<Room> foundedRooms = super.getRoomList(getNumberOfBeds(), getFrom(), getTo());
 
-        if(find.getRoomList(numberOfBeds, from, to).isEmpty()){
-            throw new NoRoomFoundException("Didn't find a room");
-        }
-
-        List<Room> roomList = new ArrayList<>();
-
-        for (Room room : this.hotel.getHotelRooms()) {
-            if (room.getNumberOfBeds() >= numberOfBeds) {
-                roomList.add(room);
+        if (!foundedRooms.isEmpty()) {
+            for (Room room : foundedRooms) {
+                System.out.println(room.getNumber());
             }
-        }
+        } else {
+            System.out.println("No available rooms have been found. We must attempt to move someone else's reservation!");
 
-        if(roomList.isEmpty()){
-            throw new NoRoomFoundException("There has not been an available room found!");
-        }
+            foundedRooms = getHotelRooms();
+            Collections.sort(foundedRooms);
 
-        for(Room fromRoom : roomList){
-            if(fromRoom.getBusyReservation(from,to) == null){
-                continue;
-            }
-            for(Room toRoom : roomList){
-                if(fromRoom.equals(toRoom)){
-                    continue;
+            for (Room room : foundedRooms) {
+                if (room.getNumberOfBeds() >= getNumberOfBeds()) {
+                    for (Reservation reservation : room.getReservations()) {
+                        if (!reservation.checkIfReservationBusy(getFrom(), getTo())) {
+                            continue;
+                        }
+
+                        if (reservation.getStatus() == ReservationStatus.UNAVAILABLE) {
+                            continue;
+                        }
+
+                        System.out.println("Room number: " + room.getNumber());
+                        System.out.println(reservation);
+                        System.out.println("Do you want to move this reservation to other date or room ?(y/n):\n");
+
+                        if (userPrompt()) {
+                            redoReservation(room, reservation);
+
+                            room.getReservations().remove(reservation);
+                            System.out.println("Make sure the VIP reservation has been made to this room, because we kicked old guests:\n" + room);
+
+                            return;
+                        } else {
+                            break;
+                        }
+                    }
                 }
-
-                if(fromRoom.getBusyReservation(from, to).getNumberOfGuests() <= toRoom.getNumberOfBeds() && toRoom.getFreeReservation(from, to) != null){
-                    System.out.println("It is possible to move reservation from " + fromRoom + " to " + toRoom + ". Do you wish to do it? Yes/No");
-                }
             }
-        }
 
+            System.out.println("No changes have been made!");
+        }
 //        Да се реализира алгоритъм, който предлага спешно намиране на стая за важен гост в случай на липса на свободни стаи за даден период.
 //        Алгоритъмът да предлага разместване на настанените от най-много две стаи.
     }

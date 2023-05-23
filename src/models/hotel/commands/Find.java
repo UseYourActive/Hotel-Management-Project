@@ -1,5 +1,7 @@
 package models.hotel.commands;
 
+import exceptions.reservations.NotAValidReservationDateRangeException;
+import exceptions.rooms.NoRoomFoundException;
 import models.Hotel;
 import models.hotel.commands.contracts.HotelCommand;
 import models.rooms.Room;
@@ -23,7 +25,7 @@ public class Find implements HotelCommand {
     }
 
     @Override
-    public void execute() {
+    public void execute() throws NoRoomFoundException, NotAValidReservationDateRangeException {
         for (Room room : getRoomList(numberOfBeds, from, to)) {
             System.out.println(room);
         }
@@ -45,5 +47,21 @@ public class Find implements HotelCommand {
         Collections.sort(roomList);
 
         return roomList;
+    }
+
+    public int getNumberOfBeds() {
+        return numberOfBeds;
+    }
+
+    public LocalDate getFrom() {
+        return from;
+    }
+
+    public List<Room> getHotelRooms() {
+        return hotelRooms;
+    }
+
+    public LocalDate getTo() {
+        return to;
     }
 }

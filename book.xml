@@ -12,7 +12,95 @@
                 </reservation>
             </reservations>
         </room>
+        <room id="5">
+            <numberOfBeds>1</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>1</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="9">
+            <numberOfBeds>1</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>1</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="13">
+            <numberOfBeds>1</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2024-12-12</startDate>
+                    <endDate>2024-12-14</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>1</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="17">
+            <numberOfBeds>1</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>1</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
         <room id="2">
+            <numberOfBeds>2</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="6">
+            <numberOfBeds>2</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="10">
+            <numberOfBeds>2</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="14">
+            <numberOfBeds>2</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="18">
             <numberOfBeds>2</numberOfBeds>
             <reservations>
                 <reservation status="Future">
@@ -34,73 +122,104 @@
                 </reservation>
             </reservations>
         </room>
-        <room id="4">
-            <numberOfBeds>4</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="5">
-            <numberOfBeds>1</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="6">
-            <numberOfBeds>2</numberOfBeds>
-            <reservations/>
-        </room>
         <room id="7">
             <numberOfBeds>3</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="8">
-            <numberOfBeds>4</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="9">
-            <numberOfBeds>1</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="10">
-            <numberOfBeds>2</numberOfBeds>
-            <reservations/>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
         </room>
         <room id="11">
             <numberOfBeds>3</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="12">
-            <numberOfBeds>4</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="13">
-            <numberOfBeds>1</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="14">
-            <numberOfBeds>2</numberOfBeds>
-            <reservations/>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
         </room>
         <room id="15">
             <numberOfBeds>3</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="16">
-            <numberOfBeds>4</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="17">
-            <numberOfBeds>1</numberOfBeds>
-            <reservations/>
-        </room>
-        <room id="18">
-            <numberOfBeds>2</numberOfBeds>
-            <reservations/>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
         </room>
         <room id="19">
             <numberOfBeds>3</numberOfBeds>
-            <reservations/>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="4">
+            <numberOfBeds>4</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="8">
+            <numberOfBeds>4</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="12">
+            <numberOfBeds>4</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
+        </room>
+        <room id="16">
+            <numberOfBeds>4</numberOfBeds>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2024-10-10</startDate>
+                    <endDate>2024-10-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
         </room>
         <room id="20">
             <numberOfBeds>4</numberOfBeds>
-            <reservations/>
+            <reservations>
+                <reservation status="Future">
+                    <startDate>2023-12-12</startDate>
+                    <endDate>2023-12-13</endDate>
+                    <note>orozovi</note>
+                    <numberOfGuests>2</numberOfGuests>
+                </reservation>
+            </reservations>
         </room>
     </rooms>
 </hotel>

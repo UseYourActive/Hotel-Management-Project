@@ -1,6 +1,5 @@
 package models.rooms;
 
-import exceptions.reservations.ReservationAlreadyExistsException;
 import exceptions.rooms.NoRoomFoundException;
 import models.reservations.Reservation;
 import models.reservations.enums.ReservationStatus;
@@ -27,7 +26,7 @@ public class Room implements Comparable<Room> {
     }
 
     @SuppressWarnings("All")
-    public boolean addReservation(Reservation reservation) throws ReservationAlreadyExistsException {
+    public boolean addReservation(Reservation reservation) {
         return reservations.add(reservation);
     }
 
@@ -75,12 +74,14 @@ public class Room implements Comparable<Room> {
         }return null;
     }
 
-    public Reservation getBusyReservation(LocalDate from, LocalDate to){
-        for(Reservation reservation : reservations){
-            if(reservation.getStartDate().isAfter(from) && reservation.getEndDate().isBefore(to)){
+    @SuppressWarnings("All")
+    public Reservation getBusyReservation(LocalDate from, LocalDate to) {
+        for (Reservation reservation : reservations) {
+            if (reservation.checkIfReservationBusy(from, to)) {
                 return reservation;
             }
-        }return null;
+        }
+        return null;
     }
 
     @Override

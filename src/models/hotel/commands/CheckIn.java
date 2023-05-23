@@ -55,6 +55,7 @@ public class CheckIn implements HotelCommand {
                 }
 
                 System.out.println("Successfully made the reservation!");
+
                 break;
             }
         }
