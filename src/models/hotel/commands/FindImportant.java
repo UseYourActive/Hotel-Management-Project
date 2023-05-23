@@ -69,4 +69,45 @@ public class FindImportant extends Find implements HotelCommand {
 //        Да се реализира алгоритъм, който предлага спешно намиране на стая за важен гост в случай на липса на свободни стаи за даден период.
 //        Алгоритъмът да предлага разместване на настанените от най-много две стаи.
     }
+
+    private boolean userPrompt() {
+        Scanner scanner = new Scanner(System.in);
+
+        String userInput = scanner.nextLine().toLowerCase();
+
+        while (true) {
+            if (Objects.equals(userInput, "y")) {
+                return true;
+            }
+            if (Objects.equals(userInput, "n")) {
+                return false;
+            }
+        }
+    }
+
+    private void redoReservation(Room room, Reservation reservation) {
+        System.out.println("Please enter new start and end date of the reservation!");
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            try {
+                String userInput = scanner.nextLine();
+                List<String> arguments = List.of(userInput.split("\\s+"));
+
+                LocalDate startDate = LocalDate.parse(arguments.get(0));
+                LocalDate endDate = LocalDate.parse(arguments.get(1));
+
+                Reservation newReservation = new Reservation(startDate, endDate, reservation.getNote(), reservation.getNumberOfGuests());
+
+                if (room.addReservation(newReservation)) {
+                    break;
+                }
+
+                System.out.println("Such reservation already exists!");
+            } catch (NotAValidReservationDateRangeException ignored) {
+                System.out.println("Please enter valid data!");
+            }
+        }
+    }
 }
