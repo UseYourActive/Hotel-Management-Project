@@ -5,6 +5,7 @@ public class PresidentRoom extends Room {
         setNumberOfBeds(4);
     }
 
+    @SuppressWarnings("All")
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

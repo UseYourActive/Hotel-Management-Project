@@ -6,7 +6,7 @@ import models.services.HotelService;
 import javax.xml.bind.JAXBException;
 
 public class Save implements DefaultCommand {
-    private HotelService hotelService;
+    private final HotelService hotelService;
 
     public Save(HotelService hotelService) {
         this.hotelService = hotelService;

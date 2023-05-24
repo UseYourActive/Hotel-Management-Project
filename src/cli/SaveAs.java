@@ -7,8 +7,8 @@ import java.io.File;
 import java.util.List;
 
 public class SaveAs implements DefaultCommand {
-    private HotelService hotelService;
-    private String pathway;
+    private final HotelService hotelService;
+    private final String pathway;
 
     public SaveAs(HotelService hotelService, List<String> arguments) {
         this.hotelService = hotelService;
@@ -17,7 +17,6 @@ public class SaveAs implements DefaultCommand {
 
     @Override
     public void execute() {
-        String currentFile = hotelService.getFile().getAbsolutePath();
         hotelService.setFile(new File(pathway));
 
         try{

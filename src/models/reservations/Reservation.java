@@ -28,6 +28,7 @@ public class Reservation {
     @XmlAttribute(name = "status")
     private ReservationStatus status;
 
+    @SuppressWarnings("All")
     private Reservation() {
         this.status = ReservationStatus.NONE;
     }
@@ -58,6 +59,7 @@ public class Reservation {
         return this.getStartDate().compareTo(from) >= 0 && this.getEndDate().compareTo(to) <= 0;
     }
 
+    @SuppressWarnings("All")
     public boolean checkCompatability(LocalDate from, LocalDate to) {
         LocalDate startDate = this.getStartDate();
         LocalDate endDate = this.getEndDate();
@@ -118,32 +120,16 @@ public class Reservation {
         return startDate;
     }
 
-    public void setStartDate(LocalDate startDate) {
-        this.startDate = startDate;
-    }
-
     public LocalDate getEndDate() {
         return endDate;
-    }
-
-    public void setEndDate(LocalDate endDate) {
-        this.endDate = endDate;
     }
 
     public String getNote() {
         return note;
     }
 
-    public void setNote(String note) {
-        this.note = note;
-    }
-
     public int getNumberOfGuests() {
         return numberOfGuests;
-    }
-
-    public void setNumberOfGuests(int numberOfGuests) {
-        this.numberOfGuests = numberOfGuests;
     }
 
     public ReservationStatus getStatus() {

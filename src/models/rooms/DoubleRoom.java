@@ -5,6 +5,7 @@ public class DoubleRoom extends Room {
         setNumberOfBeds(2);
     }
 
+    @SuppressWarnings("All")
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

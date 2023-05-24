@@ -30,6 +30,7 @@ public class Room implements Comparable<Room> {
         return reservations.add(reservation);
     }
 
+    @SuppressWarnings("All")
     public boolean removeReservation(Reservation reservation) {
         return reservations.remove(reservation);
     }
@@ -66,6 +67,7 @@ public class Room implements Comparable<Room> {
         return true;
     }
 
+    @SuppressWarnings("All")
     public Reservation getFreeReservation(LocalDate from, LocalDate to){
         for(Reservation reservation : reservations){
             if((reservation.getStartDate().isBefore(from) && reservation.getEndDate().isBefore(from)) || (reservation.getStartDate().isAfter(to) && reservation.getEndDate().isAfter(to))){

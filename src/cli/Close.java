@@ -4,7 +4,7 @@ import cli.contracts.DefaultCommand;
 import models.services.HotelService;
 
 public class Close implements DefaultCommand {
-    private HotelService hotelService;
+    private final HotelService hotelService;
 
     public Close(HotelService hotelService) {
         this.hotelService = hotelService;

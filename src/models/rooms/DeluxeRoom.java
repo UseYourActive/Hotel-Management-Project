@@ -6,6 +6,7 @@ public class DeluxeRoom extends Room {
         setNumberOfBeds(3);
     }
 
+    @SuppressWarnings("All")
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

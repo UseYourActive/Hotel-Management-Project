@@ -14,7 +14,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class FindImportant extends Find implements HotelCommand {
-    private Hotel hotel;
+    private final Hotel hotel;
 
     public FindImportant(List<String> arguments, Hotel hotel) {
         super(arguments, hotel);
