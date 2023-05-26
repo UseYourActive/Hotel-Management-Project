@@ -40,8 +40,8 @@ public class Availability implements HotelCommand {
 
     public void printRooms(Set<Room> roomList) {
         for (Room room : roomList) {
-            System.out.println(room.getNumber());
-            System.out.println(room.getNumberOfBeds());
+            System.out.println("Room number: " + room.getNumber());
+            System.out.println("Number of beds: " + room.getNumberOfBeds());
         }
     }
 }

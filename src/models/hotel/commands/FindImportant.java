@@ -2,7 +2,6 @@ package models.hotel.commands;
 
 import exceptions.reservations.NotAValidReservationDateRangeException;
 import models.Hotel;
-import models.hotel.commands.contracts.HotelCommand;
 import models.reservations.Reservation;
 import models.reservations.enums.ReservationStatus;
 import models.rooms.Room;
@@ -13,7 +12,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class FindImportant extends Find implements HotelCommand {
+public class FindImportant extends Find {
     private final Hotel hotel;
 
     public FindImportant(List<String> arguments, Hotel hotel) {
