@@ -48,6 +48,11 @@ public class CheckIn implements HotelCommand {
                     throw new ReservationException("Can't make a reservation on a past date!");
                 }
 
+                Reservation lastReservation = room.getLastReservation();
+                if (lastReservation != null && lastReservation.getEndDate().equals(from)) {
+                    throw new ReservationException("Can't make a reservation for consecutive dates");
+                }
+
                 if (room.checkRoomIfAvailable(from, to)) {
                     room.addReservation(new Reservation(from, to, note, numberOfGuests));
                 } else {

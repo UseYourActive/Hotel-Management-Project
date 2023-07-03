@@ -6,6 +6,7 @@ import models.reservations.enums.ReservationStatus;
 
 import javax.xml.bind.annotation.*;
 import java.time.LocalDate;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -98,6 +99,10 @@ public class Room implements Comparable<Room> {
         }
 
         return String.valueOf(stringBuilder);
+    }
+
+    public Reservation getLastReservation() {
+        return reservations.stream().max(Comparator.comparing(Reservation::getEndDate)).orElse(null);
     }
 
     @Override
